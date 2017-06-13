@@ -17,6 +17,7 @@ input[type=text] {
     padding: 12px 20px;
     margin: 0 20px 0 0;
     box-sizing: border-box;
+    display: inline;
 }
 .email-title {
     color: #FFF;
@@ -91,10 +92,10 @@ input[type=text] {
 }
 .description-content .description-icon {
   display: block;
-  padding-top: 40px;
-  padding-bottom: 35px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   margin-bottom: 10px;
-  background: url(../img/bg_description_icon.jpg);
+  background: url(../img/bg_description_icon.png);
   color: #ffedd4;
   font-size: 32px;
   background-position: center center;

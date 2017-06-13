@@ -14,14 +14,11 @@
     <link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     <!-- Latest compiled and minified JavaScript -->
-         <script>var defaultLanguage = "en"</script>
-    <script>var currentLanguage = "en"</script>
-    <script src="./js/jquery-3.1.1.min.js"></script>
-    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/phplist.js"></script>
-    <script src="./js/custom.js"></script>
-
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/l10n.js"></script>
+    <link rel="prefetch" type="application/l10n" href="locales/locales.ini" />
+    <script type="text/javascript" src="./js/custom.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,19 +46,31 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="scrollTo" href="#ideas">Submit features</a>
+                        <a class="scrollTo" href="#ideas" data-l10n-id="submitFeatures">Submit features</a>
                     </li>
                     <li>
-                        <a class="scrollTo" href="#contribute">Contribute</a>
+                        <a class="scrollTo" href="#contribute" data-l10n-id="contribute">Contribute</a>
                     </li>
                     <li>
-                        <a class="scrollTo" href="#donate">Donate</a>
+                        <a class="scrollTo" href="#donate" data-l10n-id="donate">Donate</a>
                     </li>
                     <li>
-                        <a class="external-link" href="https://kunzisoft.blogspot.com/">Blog</a>
+                        <a class="external-link" href="https://kunzisoft.blogspot.com/" data-l10n-id="blog">Blog</a>
                     </li>
                     <li>
-                        <a class="external-link" href="mailto:contact@kunzisoft.com">Contact</a>
+                        <a class="external-link" href="mailto:contact@kunzisoft.com" data-l10n-id="contact">Contact</a>
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                         <span id="language-text">En</span>
+                         <span class="caret"></span>
+                       </button>
+                       <ul class="dropdown-menu" id="menu-language">
+                         <li><a href="#">Fr</a></li>
+                         <li><a href="#">En</a></li>
+                       </ul>
+                      </div>
                     </li>
                 </ul>
             </div>
@@ -74,8 +83,19 @@
           <img class="img-responsive center-block" src="./img/logo.png" alt="presentation" />
         </div>
         <div class="col-lg-6">
-          <h1>Collaborate to build your powerful software</h1>
-          <p class="lead">We believe in quality and community for a better user experience.</p>
+          <h1 data-l10n-id="collaborateToBuild">Collaborate to build your powerful software</h1>
+          <p class="lead" data-l10n-id="believe">We believe in quality and community for a better user experience.</p>
+          <h2 class="email-title">Stay informed !</h2>
+          <script type="text/javascript">
+            var pleaseEnter = "Please enter your email";
+            var thanksForSubscribing = '<div class="subscribed">Thanks for subscribing.</div>';
+            var waitImage = './img/ajax-loader.gif'
+          </script>
+          <div id="phplistsubscriberesult"></div>
+          <form action="https://kunzisoft.hosted.phplist.com/lists/?p=subscribe&amp;id=1" method="post" id="phplistsubscribeform">
+            <input class="form-control" type="text" name="email" value="" id="emailaddress" />
+            <button class="btn btn-default" type="submit" id="phplistsubscribe">Subscribe</button>
+          </form>
         </div>
       </div>
     </div>
@@ -84,28 +104,45 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <h3><i class="fa fa-rocket description-icon"></i>Launch your project</h3>
-            <p>No money or no resource? Launch your project with a <strong>simple idea</strong>. You describe the concept and developpers are working to make it real.</p>
+            <h3><i class="fa fa-rocket description-icon"></i><span data-l10n-id="launchProjet">Launch your project</span></h3>
+            <p data-l10n-id="launchProjetDesc">No money or no resource? Launch your project with a <strong>simple idea</strong>. You describe the concept and developpers are working to make it real.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <h3><i class="fa fa-credit-card description-icon"></i>Donate for <i class="fa fa-heart"></i></h3>
-            <p>Submit your idea and <strong>pay what you want</strong>. It's up to you to make donations to people working on your project or one that you love.</p>
+            <h3><i class="fa fa-credit-card description-icon"></i><span data-l10n-id="donateFor">Donate for </span><i class="fa fa-heart"></i></h3>
+            <p data-l10n-id="donateForDesc">Submit your idea and <strong>pay what you want</strong>. It's up to you to make donations to people working on your project or one that you love.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <h3><i class="fa fa-users description-icon"></i>Everyone collaborates</h3>
-            <p>We create <strong>functional, reusable, beautiful and ergonomic softwares</strong>. Translation, documentation, marketing, all trades can add their competence to the building.</p>
+            <h3><i class="fa fa-users description-icon"></i><span data-l10n-id="collaborates">Everyone collaborates</span></h3>
+            <p data-l10n-id="collaboratesDesc">We create <strong>functional, reusable, beautiful and ergonomic softwares</strong>. Translation, documentation, marketing, all trades can add their competence to the building.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <h3><i class="fa fa-graduation-cap description-icon"></i>Learn and teach</h3>
-             <p>Want to teach, disseminate knowledge and experience? You're a developper, graphic artist, project manager... <strong>Upgrade your skills</strong> and learn best practices with professionals.</p>
+            <h3><i class="fa fa-graduation-cap description-icon"></i><span data-l10n-id="learnAndTeach">Learn and teach</span></h3>
+             <p data-l10n-id="learnAndTeachDesc">Want to teach, disseminate knowledge and experience? You're a developper, graphic artist, project manager... <strong>Upgrade your skills</strong> and learn best practices with professionals.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <h3><i class="fa fa-cube description-icon"></i>Manage with the best</h3>
-            <p>Another new tool for build your application? No. Community knows what are the best solution for your problem. <strong>We are not reinventing the wheel</strong>, we create with existing free and professionnal tools for the best quality.</p>
+            <h3><i class="fa fa-cube description-icon"></i><span data-l10n-id="manage">Manage with the best</span></h3>
+            <p data-l10n-id="manageDesc">Another new tool for build your application? No. Community knows what are the best solution for your problem. <strong>We are not reinventing the wheel</strong>, we create with existing free and professionnal tools for the best quality.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <h3><i class="fa fa-github description-icon"></i>Open Source</h3>
-            <p>Better to create an open source project, anyone can contribute, <strong>resolve bugs, add features and increase security.</strong> And of course, you can earn money and sell your project!</p>
+            <h3><i class="fa fa-github description-icon"></i><span data-l10n-id="openSource">Open Source</span></h3>
+            <p data-l10n-id="openSourceDesc">Better to create an open source project, anyone can contribute, <strong>resolve bugs, add features and increase security.</strong> And of course, you can earn money and sell your project!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="donate" class="section section-donation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1><i class="fa fa-heart"></i><span data-l10n-id="donateForLove">Donate for love</span></h1>
+            <p class="lead" data-l10n-id="donateForLoveDesc">Want to support your favorite software project, make a donation and become a kunzite : </p>
+            <p><i class="fa fa-lock"></i><span data-l10n-id="payement">Don't worry, It uses paypal / liberapay and is totally secure</span></p>
+            <a class="btn btn-success" title="Donate" href="https://youtube.streamlabs.com/UC_U4icXPFfgKo4IDSTSzBEQ#/"><i class="fa fa-paypal"></i> <span data-l10n-id="donate">Donate</span></a>
+            <a class="btn btn-warning" title="Donate" href="https://liberapay.com/Kunzisoft/donate"><i class="fa fa-credit-card"></i> <span data-l10n-id="donate">Donate</span></a>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-responsive center-block" src="./img/ic_donation.png" alt="ic_donation" />
           </div>
         </div>
       </div>
@@ -115,9 +152,9 @@
       <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h1><i class="fa fa-comment"></i>Submit ideas and features</h1>
-              <p class="lead">The idea is here, you want to create your application but you do not have the knowledge or resources required. Ask the community to create your own project : </p>
-              <a class="btn btn-info" target="_blank" href="http://kunzisoft.blogspot.fr/2016/10/centralisation-des-nouveaux-projets.html" title="Ask community"><i class="fa fa-flask"></i> Submit features</a>
+              <h1><i class="fa fa-comment"></i><span data-l10n-id="submitIdeas">Submit ideas and features</span></h1>
+              <p class="lead" data-l10n-id="submitIdeasDesc">The idea is here, you want to create your application but you do not have the knowledge or resources required. Ask the community to create your own project : </p>
+              <a class="btn btn-info" target="_blank" href="http://kunzisoft.blogspot.fr/2016/10/centralisation-des-nouveaux-projets.html" title="Ask community"><i class="fa fa-flask"></i> <span data-l10n-id="submitFeatures">Submit features</span></a>
             </div>
             <div class="col-lg-6">
               <img class="img-responsive center-block" src="./img/ic_idea.png" alt="ic_idea" />
@@ -133,9 +170,9 @@
               <img class="img-responsive center-block" src="./img/ic_contribution.png" alt="ic_contribution" />
             </div>
             <div class="col-lg-6">
-              <h1><i class="fa fa-wrench"></i>Offer your services</h1>
-              <p class="lead">Product software is an art, requires a high level of engineering skills and artistic imagination.<br> You have many skills, want to upgrade your knowledge or resolve a little bug : </p>
-              <a class="btn btn-default" target="_blank" href="https://github.com/Kunzisoft" title="Ask community"><i class="fa fa-gear"></i> Contribute</a>
+              <h1><i class="fa fa-wrench"></i><span data-l10n-id="offerServices">Offer your services</span></h1>
+              <p class="lead" data-l10n-id="offerServicesDesc">Product software is an art, requires a high level of engineering skills and artistic imagination.<br> You have many skills, want to upgrade your knowledge or resolve a little bug : </p>
+              <a class="btn btn-default" target="_blank" href="https://github.com/Kunzisoft" title="Ask community"><i class="fa fa-gear"></i> <span data-l10n-id="contribute">Contribute</span></a>
             </div>
           </div>
       </div>
@@ -145,16 +182,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h1><i class="fa fa-paypal"></i>Donate for love</h1>
-            <p class="lead">Want to support your favorite software project, make a donation and become a kunzite : </p>
-            <p><i class="fa fa-lock"></i>Don't worry, It uses paypal and is totally secure</p>
-            <a class="btn btn-primary" title="Donate" href="https://liberapay.com/Kunzisoft/donate"><i class="fa fa-heart"></i> Donate</a>
+            <h1><i class="fa fa-heart"></i><span data-l10n-id="donateForLove">Donate for love</span></h1>
+            <p class="lead" data-l10n-id="donateForLoveDesc">Want to support your favorite software project, make a donation and become a kunzite : </p>
+            <p><i class="fa fa-lock"></i><span data-l10n-id="payement">Don't worry, It uses paypal / liberapay and is totally secure</span></p>
+            <a class="btn btn-success" title="Donate" href="https://youtube.streamlabs.com/UC_U4icXPFfgKo4IDSTSzBEQ#/"><i class="fa fa-paypal"></i> <span data-l10n-id="donate">Donate</span></a>
+            <a class="btn btn-warning" title="Donate" href="https://liberapay.com/Kunzisoft/donate"><i class="fa fa-credit-card"></i> <span data-l10n-id="donate">Donate</span></a>
           </div>
           <div class="col-lg-6">
             <img class="img-responsive center-block" src="./img/ic_donation.png" alt="ic_donation" />
           </div>
         </div>
-
       </div>
     </div>
 
@@ -163,7 +200,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright text-muted small">Copyright &copy; Kunzisoft 2016. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; Kunzisoft 2016. <span data-l10n-id="allRightsReserved">All Rights Reserved</span></p>
                 </div>
             </div>
         </div>
