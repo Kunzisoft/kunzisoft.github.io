@@ -136,7 +136,7 @@ footer p {
 }
 .splash h1 {
     font-size: 45px;
-    color: #ffedd4;
+    color: #ffe6a4;
 }
 .splash h2 {
     font-size: 26px;
@@ -169,26 +169,20 @@ footer p {
   color: #F5F5F5;
   padding: 0;
 }
-.section-ideas {
+.section-bg-white {
   background-color: #FFF;
   background-size: cover;
-  color: #CB5555;
+  color: #DF3E32;
 }
-.section-contribution {
+.section-bg-gray {
   background-color: #F2F2F2;
   background-size: cover;
   color: #6B4A9C;
 }
-.section-donation {
+.section-bg-purple {
   background-color: #743998;
   background-size: cover;
   color: #F5F5F5;
-}
-.section-love {
-  background-color: #fcfcfc;
-  background-size: cover;
-  background-position:center center;
-  color: #6B4A9C;
 }
 .section-preview {
     padding: 4em 0 4em;
