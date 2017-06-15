@@ -88,7 +88,11 @@ input[type=text] {
     margin-bottom: 10px;
 }
 .description-content {
-  /*! background-color: #fffbf5; */
+  background: url(../img/bg_description.jpg) no-repeat center fixed;
+  margin:0;
+  padding:0;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
 }
 .description-content .description-icon {
   display: block;
