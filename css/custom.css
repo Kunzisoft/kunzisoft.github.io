@@ -158,15 +158,18 @@ footer p {
 .splash .alert {
     margin: 2em 0;
 }
+.carousel-inner > .item {
+  padding: 25px;
+}
 .section {
-    padding: 2em 0 2em;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
+  padding: 2em 0 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 .section .fa {
-    margin-right: .5em;
+  margin-right: .5em;
 }
 .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5 {
-    margin: 0;
+  margin: 0;
 }
 .section-information {
   background-color: #c03434;
@@ -178,6 +181,11 @@ footer p {
   background-size: cover;
   color: #DF3E32;
 }
+.section-bg-white h1,
+.section-bg-white h2,
+.section-bg-white h3 {
+  color: #9946cc;
+}
 .section-bg-gray {
   background-color: #F2F2F2;
   background-size: cover;
@@ -187,6 +195,11 @@ footer p {
   background-color: #743998;
   background-size: cover;
   color: #F5F5F5;
+}
+.section-bg-purple h1,
+.section-bg-purple h2,
+.section-bg-purple h3 {
+  color: #ffe6a4;
 }
 .section-preview {
     padding: 4em 0 4em;

@@ -1273,7 +1273,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 28px;
 }
 h3,
 .h3 {
@@ -6407,6 +6407,7 @@ button.close {
   padding-left: 0;
   list-style: none;
   text-align: center;
+  display: none;
 }
 .carousel-indicators li {
   display: inline-block;
@@ -6785,7 +6786,7 @@ button.close {
   border-color: white;
 }
 .btn {
-  border-width: 1px;
+  border-width: 0px;
 }
 .btn:active {
   -webkit-box-shadow: none;
