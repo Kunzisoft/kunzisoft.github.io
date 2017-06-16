@@ -1107,7 +1107,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #ffb4b4;
+  color: #fed7ff;
   text-decoration: none;
 }
 a:focus {
@@ -1277,7 +1277,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 26px;
+  font-size: 1.8em;
 }
 h4,
 .h4 {
@@ -3998,7 +3998,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #303030;
+  background-color: #9d5fc3;
 }
 .nav > li.disabled > a {
   color: #605e5e;
@@ -4531,7 +4531,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #5e4a7d;
+  background-color: #743998;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,

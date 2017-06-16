@@ -1,91 +1,91 @@
-body {
-    padding-top: 50px;
-}
 body>.navbar {
-    -webkit-transition: background-color .3s ease-in;
-    transition: background-color .3s ease-in;
+  -webkit-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in;
 }
 @media (min-width:768px) {
-    body>.navbar-transparent {
-    background-color: transparent;
+  body>.navbar-transparent {
+  background-color: #ececec80;
 }
-body>.navbar-transparent .navbar-nav>.open>a {
-    background-color: transparent!important;
+body>.navbar-transparent a {
+  color: white;
 }
 input[type=text] {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 0 20px 0 0;
-    box-sizing: border-box;
-    display: inline;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 0 20px 0 0;
+  box-sizing: border-box;
+  display: inline;
 }
 .email-title {
-    color: #FFF;
+  color: #FFF;
 }
 }#home {
-    padding-top: 0;
+  padding-top: 0;
 }
 #home .navbar-brand {
-    padding: 13.5px 15px 12.5px;
+  padding: 13.5px 15px 12.5px;
 }
 #home .navbar-brand>img {
-    display: inline;
-    margin: 0 10px;
-    height: 100%}
+  display: inline;
+  margin: 0 10px;
+  height: 100%}
 #banner {
-    min-height: 300px;
-    border-bottom: none;
+  min-height: 300px;
+  border-bottom: none;
 }
 .nav > li > form {
-    padding: 15px;
+  padding: 15px;
 }
 .navbar-default .navbar-nav > li > .external-link {
-    color: #661fa5;
+  color: #661fa5;
+}
+.navbar-transparent .navbar-nav > li > .external-link {
+  color: #1e1e1e;
 }
 .table-of-contents {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 .page-header h1 {
-    font-size: 4em;
+  font-size: 4em;
 }
 .bs-docs-section {
-    margin-top: 6em;
+  margin-top: 6em;
 }
 .bs-docs-section h1 {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 .bs-component {
-    position: relative;
+  position: relative;
 }
 .bs-component .modal {
-    position: relative;
-    top: auto;
-    right: auto;
-    left: auto;
-    bottom: auto;
-    z-index: 1;
-    display: block;
+  position: relative;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  z-index: 1;
+  display: block;
 }
 .bs-component .modal-dialog {
-    width: 90%}
+  width: 90%}
 .bs-component .popover {
-    position: relative;
-    display: inline-block;
-    width: 220px;
-    margin: 20px;
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  margin: 20px;
 }
 #source-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  font-weight: 700;
 }
 .nav-tabs {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .progress {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .description-content {
   background: url(../img/bg_description.jpg) no-repeat center fixed;
@@ -107,62 +107,74 @@ input[type=text] {
   text-align: center;
 }
 .description-content h3, .description-content .h3 {
-    color: #582289;
+  color: #582289;
 }
 .description-content p {
-  min-height: 90px;
-}
-footer {
-    margin: 5em 0;
+  min-height: 120px;
+  font-size: 1.2em;
 }
 footer li {
-    float: left;
-    margin-right: 1.5em;
-    margin-bottom: 1.5em;
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
 }
 footer p {
-    clear: left;
-    margin-bottom: 0;
+  clear: left;
+  margin-bottom: 0;
 }
 .goal {
-    color: #fff;
+  color: #fff;
 }
 .carousel .row {
-    margin: 3em;
+  margin: 3em;
 }
 .splash {
-    padding: 5em 0 5em;
-    background-image: url(../img/bg.jpg);
-    background-color: #5b3c89;
-    background-size: cover;
-    background-position:center center;
-    color: #fff;
+  position: relative;
+  height: 100vh;
+  padding: 5em 0 5em;
+  background-image: url(../img/bg.jpg);
+  background-color: #5b3c89;
+  background-size: cover;
+  background-position:center center;
+  color: #fff;
+}
+.splash .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 100%;
 }
 .splash h1 {
-    font-size: 45px;
-    color: #ffe6a4;
+  font-size: 5em;
+  color: #ffe6a4;
 }
 .splash h2 {
-    font-size: 26px;
-    margin-top: 60px;
+  font-size: 3em;
+  margin-top: 60px;
+}
+.splash p {
+  font-size: 1.5em;
 }
 .splash .splash-form {
   text-align: left;
 }
 .splash .logo {
-    width: 160px;
+  width: 160px;
 }
 .splash #social {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 .splash .alert {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 .carousel-inner > .item {
   padding: 25px;
 }
 .section {
-  padding: 2em 0 2em;
+  padding: 5em 0 5em;
   border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 .section .fa {

@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	/**
+	 * Manage Langages
+	 **/
 	//return prefered langage
 	var language;
 	if (navigator.browserLanguage)
@@ -31,4 +34,26 @@ $(document).ready(function() {
 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
 		return false;
 	});
+
+	/**
+	 * Listen to scroll to change header opacity class
+	 */
+	function checkScroll(){
+	    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+	    if($(window).scrollTop() <= startY){
+	        $('.navbar').addClass("navbar-transparent");
+			    $('.navbar').removeClass("navbar-default");
+	    }else{
+	        $('.navbar').addClass("navbar-default");
+	        $('.navbar').removeClass("navbar-transparent");
+	    }
+	}
+
+	if($('.navbar').length > 0){
+	    $(window).on("scroll load resize", function(){
+	        checkScroll();
+	    });
+	}
+
 });
