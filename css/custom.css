@@ -1,3 +1,12 @@
+h1 i.fa,
+h2 i.fa,
+h3 i.fa,
+h4 i.fa,
+h5 i.fa {
+  margin-right: 10px;
+  font-size: 1.2em
+}
+
 /**
   NAVBAR
 **/
@@ -62,6 +71,9 @@
 .description-content p {
   /*! min-height: 200px; */
   font-size: 1.2em;
+}
+.description-content .description-tile {
+  min-height: 320px;
 }
 
 
@@ -140,53 +152,6 @@
 }
 
 /*
-  TABLE
-*/
-table thead {
-  background-color: #DF3E32;
-  color: white;
-}
-table td.title {
-  background-color: #743998;
-  color: white;
-}
-table > tbody > tr:nth-of-type(2n+1) > td.title {
-  background-color: #6a308d;
-}
-
-/*
- TILE
-*/
-.tile {
-  background-color: #e7d6ff;
-  padding: 0px 20px 20px 20px;
-  border-radius: 18px;
-  min-height: 420px;
-  color: #212121;
-  overflow: hidden;
-  cursor: pointer;
-  outline: 0;
-  border: 0;
-  -webkit-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-
-/*
-  CAROUSEL
-*/
-.carousel .row {
-  margin: 3em;
-}
-.carousel-inner > .item {
-  padding: 25px;
-}
-
-/*
   SECTION
 */
 .section {
@@ -231,4 +196,62 @@ footer li {
 footer p {
   clear: left;
   margin-bottom: 0;
+}
+
+
+/*
+  TABLE
+*/
+table thead {
+  background-color: #DF3E32;
+  color: white;
+}
+table td.title {
+  background-color: #743998;
+  color: white;
+}
+table > tbody > tr:nth-of-type(2n+1) > td.title {
+  background-color: #6a308d;
+}
+
+/*
+ TILE
+*/
+.tile {
+  background-color: #e7d6ff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 18px;
+  min-height: 420px;
+  color: #212121;
+  overflow: hidden;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.tile h1,
+.tile h2,
+.tile h3,
+.tile h4,
+.tile h5 {
+  color: #582289;
+}
+.tile ul {
+  padding-left: 5px;
+}
+
+
+/*
+  CAROUSEL
+*/
+.carousel .row {
+  margin: 3em;
+}
+.carousel-inner > .item {
+  padding: 25px;
 }
