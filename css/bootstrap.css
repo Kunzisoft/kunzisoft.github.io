@@ -2326,7 +2326,7 @@ th {
   border-bottom-width: 2px;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #3d3d3d;
+  background-color: #f4eaff;
 }
 .table-hover > tbody > tr:hover {
   background-color: #464545;
@@ -3076,7 +3076,7 @@ fieldset[disabled] a.btn {
   border-color: #5B3C89;
 }
 .btn-default:hover {
-  color: #414141;
+  color: #f8f8f8;
   background-color: #8a58d2;
   border-color: #5B3C89;
 }
@@ -4503,7 +4503,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f3f3f3;
+  background-color: #e3cfff;
   border-color: #6B4A9C;
 }
 .navbar-default .navbar-brand {
@@ -5856,14 +5856,14 @@ button.list-group-item-danger.active:focus {
   font-size: 22.5px;
   font-weight: bold;
   line-height: 1;
-  color: #ffffff;
+  color: #242424;
   text-shadow: none;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
 .close:hover,
 .close:focus {
-  color: #ffffff;
+  color: #df3e32;
   text-decoration: none;
   cursor: pointer;
   opacity: 0.5;
@@ -5917,7 +5917,7 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #303030;
+  background-color: #f9f4ff;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -5946,7 +5946,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #464545;
+  border-bottom: 1px solid #aeaeae;
 }
 .modal-header .close {
   margin-top: -2px;
@@ -5954,6 +5954,8 @@ button.close {
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
+  color: #7c3ea2;
+  font-weight: bold;
 }
 .modal-body {
   position: relative;
@@ -5962,7 +5964,7 @@ button.close {
 .modal-footer {
   padding: 20px;
   text-align: right;
-  border-top: 1px solid #464545;
+  border-top: 1px solid #aeaeae;
 }
 .modal-footer .btn + .btn {
   margin-left: 5px;

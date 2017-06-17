@@ -27,22 +27,18 @@
 }
 @media (min-width:768px) {
   .navbar-transparent {
-    background-color: #ececec80;
+    background-color: #ececec33;
   }
   .navbar-transparent a {
     color: white;
   }
 }
 
-.btn {
-  font-size: 1.3em;
-}
-
 /**
   DESCRIPTION CONTENT
 **/
 .description-content {
-  background: url(../img/bg_description.jpg) no-repeat center fixed;
+  background: linear-gradient(180deg ,#e8d7ff, #c399ff);
   margin:0;
   padding:0;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
@@ -50,10 +46,10 @@
 }
 .description-content .description-icon {
   display: block;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-bottom: 10px;
-  background: url(../img/bg_description_icon.png);
+  background: url(../img/bg_description_icon.svg);
   color: #ffedd4;
   font-size: 32px;
   background-position: center center;
@@ -64,7 +60,7 @@
   color: #582289;
 }
 .description-content p {
-  min-height: 200px;
+  /*! min-height: 200px; */
   font-size: 1.2em;
 }
 
@@ -79,8 +75,10 @@
   background-image: url(../img/bg.jpg);
   background-color: #5b3c89;
   background-size: cover;
-  background-position:center center;
+  background-position: center center;
   color: #fff;
+  top: 0px;
+  left: 0px;
 }
 .splash .container {
   position: absolute;
@@ -92,12 +90,13 @@
   width: 100%;
 }
 .splash h1 {
-  font-size: 5em;
+  font-size: 3.5em;
   color: #ffe6a4;
 }
 .splash h2 {
   font-size: 2em;
-  margin-top: 60px;
+  margin-top: 20px;
+  color: #c69ad7;
 }
 .splash p {
   font-size: 1.5em;
@@ -141,6 +140,43 @@
 }
 
 /*
+  TABLE
+*/
+table thead {
+  background-color: #DF3E32;
+  color: white;
+}
+table td.title {
+  background-color: #743998;
+  color: white;
+}
+table > tbody > tr:nth-of-type(2n+1) > td.title {
+  background-color: #6a308d;
+}
+
+/*
+ TILE
+*/
+.tile {
+  background-color: #e7d6ff;
+  padding: 0px 20px 20px 20px;
+  border-radius: 18px;
+  min-height: 420px;
+  color: #212121;
+  overflow: hidden;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/*
   CAROUSEL
 */
 .carousel .row {
@@ -158,7 +194,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 .section-bg-white {
-  background-color: #FFF;
+  background-color: #E3CFFF;
   background-size: cover;
   color: #DF3E32;
 }

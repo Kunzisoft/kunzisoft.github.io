@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26"
+   height="26"
+   viewBox="0 0 26 26"
+   id="svg6717"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs6719">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker7660"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path7662" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker7632"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path7634" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker7610"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path7612" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#d5d5d5"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="16"
+     inkscape:cx="19.877913"
+     inkscape:cy="5.6876824"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1023"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid7281"
+       spacingx="0.25"
+       spacingy="0.25" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata6722">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1026.3622)">
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 13 1 L 3 15.5 L 13 25 L 23 15.5 L 13 1 z "
+       transform="translate(0,1026.3622)"
+       id="path7718" />
+    <path
+       inkscape:export-ydpi="43"
+       inkscape:export-xdpi="43"
+       inkscape:export-filename="/home/joker/Project/Satanasoft/Satanasoft-WebSite/img/logotype.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4349"
+       d="m 23,1041.8622 -10,9.5 0,-9.5 z"
+       style="fill:#a700f6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75965059;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="43"
+       inkscape:export-xdpi="43"
+       inkscape:export-filename="/home/joker/Project/Satanasoft/Satanasoft-WebSite/img/logotype.png"
+       style="fill:#661fa5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75965059;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3,1041.8622 10,9.5 0,-9.5 z"
+       id="path4351"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       inkscape:export-ydpi="43"
+       inkscape:export-xdpi="43"
+       inkscape:export-filename="/home/joker/Project/Satanasoft/Satanasoft-WebSite/img/logotype.png"
+       style="fill:#d786ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75965059;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23,1041.8622 -10,-14.5 0,14.5 z"
+       id="path4353"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       inkscape:export-ydpi="43"
+       inkscape:export-xdpi="43"
+       inkscape:export-filename="/home/joker/Project/Satanasoft/Satanasoft-WebSite/img/logotype.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4355"
+       d="m 3,1041.8622 10,-14.5 0,14.5 z"
+       style="fill:#a700f6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75965059;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="43"
+       inkscape:export-xdpi="43"
+       inkscape:export-filename="/home/joker/Project/Satanasoft/Satanasoft-WebSite/img/logotype.png"
+       style="fill:#d7abf2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75965059;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 11.376962,1036.413 7.5,1041.8622 l 5.257048,4.9824 0.244605,0.2406 0.244561,-0.2406 L 18.5,1041.8622 14.6263,1036.413 13,1034.1122 Z"
+       id="path4357"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       id="path7737"
+       d="M 11.376962,1036.413 7.5,1041.8622 l 5.257048,4.9824 0.244605,0.2406 0.244561,-0.2406 L 18.5,1041.8622 14.6263,1036.413 13,1034.1122 Z"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/joker/Project/Satanasoft/Satanasoft-WebSite/img/logotype.png"
+       inkscape:export-xdpi="43"
+       inkscape:export-ydpi="43" />
+  </g>
+</svg>
