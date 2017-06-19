@@ -111,6 +111,12 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <div class="description-tile">
+              <h3><i class="fa fa-code description-icon"></i><span data-l10n-id="code"></span></h3>
+              <p data-l10n-id="codeDesc"></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="description-tile">
               <h3><i class="fa fa-credit-card description-icon"></i><span data-l10n-id="donateFor"></span> <i class="fa fa-heart"></i></h3>
               <p data-l10n-id="donateForDesc"></p>
             </div>
@@ -119,12 +125,6 @@
             <div class="description-tile">
               <h3><i class="fa fa-github description-icon"></i><span data-l10n-id="openSource"></span></h3>
               <p data-l10n-id="openSourceDesc"></p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="description-tile">
-              <h3><i class="fa fa-code description-icon"></i><span data-l10n-id="code"></span></h3>
-              <p data-l10n-id="codeDesc"></p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -149,88 +149,118 @@
               <thead>
                 <tr>
                   <th></th>
-                  <th>Formule Libre</th>
-                  <th>Formule Open</th>
-                  <th>Formule Pro</th>
+                  <th data-l10n-id="formulaLibre"></th>
+                  <th data-l10n-id="formulaOpen"></th>
+                  <th data-l10n-id="formulaPro"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="title">Licence</td>
+                  <td class="title" data-l10n-id="softwareLicense"></td>
                   <td>
-                    <strong class="green">Copyleft : <br />GNU / GPL</strong>
-                    <p><small>Licence libre pour un code source accessible à tous et tous les dérivés du programme</small></p>
+                    <strong class="green" data-l10n-id="copyleft"></strong>
+                    <p><small data-l10n-id="copyleftDesc"></small></p>
                   </td>
                   <td>
-                    <strong class="green">Copyright : <br />BSD / Apache / MIT</strong>
-                    <p><small>Licence Open Source pour un code source accessible à tous mais dont les dérivés ne le sont pas forcément</small></p>
+                    <strong class="green" data-l10n-id="copyright"></strong>
+                    <p><small data-l10n-id="copyrightDesc"></small></p>
                   </td>
                   <td>
-                    <strong class="green">Propriétaire</strong>
-                    <p><small>Laisse le choix de la licence avec code source non accessible</small></p>
+                    <strong class="green" data-l10n-id="owner"></strong>
+                    <p><small data-l10n-id="ownerDesc"></small></p>
                   </td>
                 </tr>
                 <tr>
-                  <td class="title">Utilisable en projet commercial</td>
+                  <td class="title" data-l10n-id="commercialProject"></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Analyse de besoins</td>
+                  <td class="title" data-l10n-id="needsAnalysis"></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Spécifications</td>
+                  <td class="title" data-l10n-id="specifications"></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Conception</td>
+                  <td class="title" data-l10n-id="conception"></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Réalisation</td>
+                  <td class="title" data-l10n-id="realization"></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Tests</td>
+                  <td class="title" data-l10n-id="tests"></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Design</td>
-                  <td><i class="fa fa-circle orange"></i>Proposition d'un design moderne et générique en fonction de l'application</td>
-                  <td><i class="fa fa-check green"></i>Personnalisable</td>
-                  <td><i class="fa fa-check green"></i>Personnalisable</td>
+                  <td class="title" data-l10n-id="documentation"></td>
+                  <td><i class="fa fa-circle orange"></i><span data-l10n-id="technicalDocumentation"></span></td>
+                  <td><i class="fa fa-check green"></i><span data-l10n-id="technicalDocumentation"></span></td>
+                  <td><i class="fa fa-check green"></i><span data-l10n-id="technicalFunctionalDocumentation"></span></td>
                 </tr>
                 <tr>
-                  <td class="title">Deadlines possibles</td>
+                  <td class="title" data-l10n-id="design"></td>
+                  <td><i class="fa fa-circle orange"></i><span data-l10n-id="modernDesign"></span></td>
+                  <td><i class="fa fa-circle orange"></i><span data-l10n-id="licenceCC"></span></td>
+                  <td><i class="fa fa-check green"></i><span data-l10n-id="withoutConstraint"></span></td>
+                </tr>
+                <tr>
+                  <td class="title" data-l10n-id="logo"></td>
+                  <td><i class="fa fa-times red"></i><span data-l10n-id="noChoice"></span></td>
+                  <td><i class="fa fa-circle orange"></i><span data-l10n-id="licenceCC"></span></td>
+                  <td><i class="fa fa-check green"></i><span data-l10n-id="withoutConstraint"></span></td>
+                </tr>
+                <tr>
+                  <td class="title" data-l10n-id="possibleDeadlines"></td>
                   <td><i class="fa fa-times red"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                   <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Tarifs</td>
-                  <td><strong>GRATUIT</strong> Mais vous pouvez faire une donation pour votre projet préféré</td>
-                  <td><strong>250€ HT/Jour</strong><i class="fa fa-plus"></i> Prestations annexes</td>
-                  <td><strong>390€ HT/Jour</strong><i class="fa fa-plus"></i> Prestations annexes</td>
+                  <td class="title" data-l10n-id="prices"></td>
+                  <td><strong data-l10n-id="free"></strong> - <span data-l10n-id="donateFavorite"></span></td>
+                  <td><strong>250€ HT/<span data-l10n-id="day"></span></strong><i class="fa fa-plus"></i> <span data-l10n-id="additionalServices"></span></td>
+                  <td><strong>390€ HT/<span data-l10n-id="day"></span></strong><i class="fa fa-plus"></i> <span data-l10n-id="additionalServices"></span></td>
+                </tr>
+                <tr>
+                  <td class="title" data-l10n-id="choiceFormula"></td>
+                  <td>
+                    <div class="radio">
+                      <label><input type="radio" name="formula" value="libre" checked="checked">Libre</label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="radio">
+                      <label><input type="radio" name="formula" value="open">Open</label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="radio">
+                      <label><input type="radio" name="formula" value="pro">Pro</label>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
-            <p><small>* Les programmes dérivés sont les logiciels et applications qui incluent directement ou indirectement par intégration, mise à jour ou redéfinition, du code provenant du logiciel sous licence.</small></p>
-            <p>Les contraintes sont modulables en fonction des demandes de création numérique, pour plus de renseignements merci de nous laisser un message dans la rubrique "contact".</p>
+            <p><small data-l10n-id="derivativePrograms"></small></p>
+            <p data-l10n-id="modulableConstraints"></p>
           </div>
           <div class="modal-footer">
-            <a class="btn btn-info external-link" target="_blank" href="mailto:contact@kunzisoft.com" title="Ask community"><i class="fa fa-flask"></i> <span data-l10n-id="contact"></span></a>
+            <button class="btn btn-info external-link quote-email" data-email="mailto:contact@kunzisoft.com"><i class="fa fa-flask"></i> <span data-l10n-id="askQuote"></span></button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>

@@ -1,8 +1,19 @@
+function sendMail() {
+    var link = "mailto:me@example.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape(document.getElementById('myText').value)
+    ;
+    window.location.href = link;
+}
+
 $(document).ready(function() {
 
 	/**
 	 * Manage Langages
 	 **/
+  var _ = document.webL10n.get;
+
 	//return prefered langage
 	var language;
 	if (navigator.browserLanguage)
@@ -33,6 +44,16 @@ $(document).ready(function() {
 		var speed = 750; // Durée de l'animation (en ms)
 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
 		return false;
+	});
+
+	// Send quote mail
+	$('.quote-email').on('click', function() {
+    var formula = $('input:radio[name=formula]:checked').val();
+		$(location).attr('href', 'mailto:'+$(this).attr('data-email')+'?subject='
+                             + encodeURIComponent(_('emailSubject', { formula: formula }))
+                             + "&body="
+                             + encodeURIComponent(_('emailBody'))
+                           );
 	});
 
 	/**
