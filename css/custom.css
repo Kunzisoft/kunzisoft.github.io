@@ -6,6 +6,15 @@ h5 i.fa {
   margin-right: 10px;
   font-size: 1.2em
 }
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.orange {
+  color: orange;
+}
 
 /**
   NAVBAR
@@ -75,7 +84,6 @@ h5 i.fa {
 .description-content .description-tile {
   min-height: 320px;
 }
-
 
 /**
   SPLASH SCREEN
@@ -198,17 +206,34 @@ footer p {
   margin-bottom: 0;
 }
 
+/*
+  MODAL
+*/
+.modal-dialog {
+    width: 800px;
+    margin: 30px auto;
+}
 
 /*
   TABLE
 */
 table thead {
   background-color: #DF3E32;
+  font-weight: bold;
   color: white;
+}
+table td {
+  width: 25%;
 }
 table td.title {
   background-color: #743998;
+  font-weight: bold;
   color: white;
+}
+table td i.fa {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2em
 }
 table > tbody > tr:nth-of-type(2n+1) > td.title {
   background-color: #6a308d;

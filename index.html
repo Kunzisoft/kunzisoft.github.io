@@ -78,7 +78,7 @@
         <img class="img-responsive center-block" src="./img/logo.png" alt="presentation" />
         <div class="col-lg-12">
           <h1 data-l10n-id="collaborateToBuild"></h1>
-          <h2 data-l10n-id="listTechno"></h1>
+          <h2 data-l10n-id="listTechno"></h2>
           <p class="lead" data-l10n-id="believe"></p>
         </div>
       </div>
@@ -99,6 +99,18 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <div class="description-tile">
+              <h3><i class="fa fa-diamond description-icon"></i><span data-l10n-id="quality"></span></h3>
+              <p data-l10n-id="qualityDesc"></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="description-tile">
+              <h3><i class="fa fa-cube description-icon"></i><span data-l10n-id="professionnal"></span></h3>
+              <p data-l10n-id="professionnalDesc"></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="description-tile">
               <h3><i class="fa fa-credit-card description-icon"></i><span data-l10n-id="donateFor"></span> <i class="fa fa-heart"></i></h3>
               <p data-l10n-id="donateForDesc"></p>
             </div>
@@ -111,38 +123,26 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <div class="description-tile">
-              <h3><i class="fa fa-users description-icon"></i><span data-l10n-id="collaborates"></span></h3>
-              <p data-l10n-id="collaboratesDesc"></p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="description-tile">
-              <h3><i class="fa fa-graduation-cap description-icon"></i><span data-l10n-id="learnAndTeach"></span></h3>
-              <p data-l10n-id="learnAndTeachDesc"></p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="description-tile">
-              <h3><i class="fa fa-cube description-icon"></i><span data-l10n-id="manage"></span></h3>
-              <p data-l10n-id="manageDesc"></p>
+              <h3><i class="fa fa-code description-icon"></i><span data-l10n-id="code"></span></h3>
+              <p data-l10n-id="codeDesc"></p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#criteria" ><i class="fa fa-plus-square"></i> <span data-l10n-id="readMore"></span></button>
+            <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#prices" ><i class="fa fa-plus-square"></i> <span data-l10n-id="readMore"></span></button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Modal -->
-    <div id="criteria" class="modal fade" role="dialog">
+    <div id="prices" class="modal fade" role="dialog">
       <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title" data-l10n-id="criteria"></h4>
+            <h4 class="modal-title" data-l10n-id="prices"></h4>
           </div>
           <div class="modal-body">
             <table class="table table-striped table-bordered">
@@ -157,47 +157,80 @@
               <tbody>
                 <tr>
                   <td class="title">Licence</td>
-                  <td>Copyleft : GPL</td>
-                  <td>Copyright : BSD / Apache / MIT</td>
-                  <td>Propriétaire</td>
+                  <td>
+                    <strong class="green">Copyleft : <br />GNU / GPL</strong>
+                    <p><small>Licence libre pour un code source accessible à tous et tous les dérivés du programme</small></p>
+                  </td>
+                  <td>
+                    <strong class="green">Copyright : <br />BSD / Apache / MIT</strong>
+                    <p><small>Licence Open Source pour un code source accessible à tous mais dont les dérivés ne le sont pas forcément</small></p>
+                  </td>
+                  <td>
+                    <strong class="green">Propriétaire</strong>
+                    <p><small>Laisse le choix de la licence avec code source non accessible</small></p>
+                  </td>
                 </tr>
                 <tr>
                   <td class="title">Utilisable en projet commercial</td>
-                  <td>Oui</td>
-                  <td>Oui</td>
-                  <td>Oui</td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Qualités</td>
-                  <td>Oui</td>
-                  <td>Oui</td>
-                  <td>Oui</td>
+                  <td class="title">Analyse de besoins</td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                </tr>
+                <tr>
+                  <td class="title">Spécifications</td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                </tr>
+                <tr>
+                  <td class="title">Conception</td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                </tr>
+                <tr>
+                  <td class="title">Réalisation</td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                </tr>
+                <tr>
+                  <td class="title">Tests</td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                </tr>
+                <tr>
+                  <td class="title">Design</td>
+                  <td><i class="fa fa-circle orange"></i>Proposition d'un design moderne et générique en fonction de l'application</td>
+                  <td><i class="fa fa-check green"></i>Personnalisable</td>
+                  <td><i class="fa fa-check green"></i>Personnalisable</td>
                 </tr>
                 <tr>
                   <td class="title">Deadlines possibles</td>
-                  <td>Non</td>
-                  <td>Oui</td>
-                  <td>Oui</td>
+                  <td><i class="fa fa-times red"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
+                  <td><i class="fa fa-check green"></i></td>
                 </tr>
                 <tr>
-                  <td class="title">Open Source</td>
-                  <td><strong>Oui, avec obligation</strong> d'ouverture du code des programmes dérivés*</td>
-                  <td><strong>Oui, sans obligation</strong> d'ouverture du code des programmes dérivés*</td>
-                  <td><strong>Tous les choix possibles</strong>, plusieurs licences peuvent être appliquées simultanéments à un logiciel, bibliothèque, API ou application/td>
-                </tr>
-                <tr>
-                  <td class="title">Prix</td>
-                  <td>GRATUIT</td>
-                  <td><i class="fa fa-plus"></i> Suivant Prestations Demandées</td>
-                  <td><i class="fa fa-plus"></i><i class="fa fa-plus"></i> Suivant Prestations Demandées</td>
+                  <td class="title">Tarifs</td>
+                  <td><strong>GRATUIT</strong> Mais vous pouvez faire une donation pour votre projet préféré</td>
+                  <td><strong>250€ HT/Jour</strong><i class="fa fa-plus"></i> Prestations annexes</td>
+                  <td><strong>390€ HT/Jour</strong><i class="fa fa-plus"></i> Prestations annexes</td>
                 </tr>
               </tbody>
             </table>
-            <p>Les contraintes sont modulables en fonction des demandes de création numérique, pour plus de renseignements merci de nous laisser un message dans la rubrique "contact".
-            * Les programmes dérivés sont les logiciels et applications qui incluent directement ou indirectement par intégration, mise à jour ou redéfinition du code provenant du logiciel sous licence.</p>
+            <p><small>* Les programmes dérivés sont les logiciels et applications qui incluent directement ou indirectement par intégration, mise à jour ou redéfinition, du code provenant du logiciel sous licence.</small></p>
+            <p>Les contraintes sont modulables en fonction des demandes de création numérique, pour plus de renseignements merci de nous laisser un message dans la rubrique "contact".</p>
           </div>
           <div class="modal-footer">
-            <a class="btn btn-info" target="_blank" class="external-link" href="mailto:contact@kunzisoft.com" title="Ask community"><i class="fa fa-flask"></i> <span data-l10n-id="contact"></span></a>
+            <a class="btn btn-info external-link" target="_blank" href="mailto:contact@kunzisoft.com" title="Ask community"><i class="fa fa-flask"></i> <span data-l10n-id="contact"></span></a>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -230,7 +263,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
-              <h1><i class="fa fa-gear description-icon"></i><span data-l10n-id="listProjects"></span></h1>
+              <h1><i class="fa fa-cogs description-icon"></i><span data-l10n-id="listProjects"></span></h1>
             </div>
 
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -310,7 +343,7 @@
             <div class="col-lg-12">
               <h1><i class="fa fa-comment"></i><span data-l10n-id="submitIdeasAndFeatures"></span></h1>
               <p class="lead" data-l10n-id="submitIdeasAndFeaturesDesc"></p>
-              <a class="btn btn-info" target="_blank" class="external-link" href="mailto:contact@kunzisoft.com" title="Ask community"><i class="fa fa-flask"></i> <span data-l10n-id="contact"></span></a>
+              <a class="btn btn-info external-link" target="_blank" href="mailto:contact@kunzisoft.com" title="Ask community"><i class="fa fa-flask"></i> <span data-l10n-id="contact"></span></a>
             </div>
           </div>
       </div>
