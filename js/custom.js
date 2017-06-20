@@ -79,6 +79,8 @@ $(document).ready(function() {
 
 });
 
+var interval;
+
 var canvasDots = function() {
     var canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d'),
@@ -179,9 +181,13 @@ var canvasDots = function() {
     mousePosition.x = window.innerWidth / 2;
     mousePosition.y = window.innerHeight / 2;
 
-    setInterval(createDots, 1000/30);
+    interval = setInterval(createDots, 1000/30);
 };
 
 window.onload = function() {
     canvasDots();
+};
+
+window.onresize = function(event) {
+  clearInterval(interval);
 };
