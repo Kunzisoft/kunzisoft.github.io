@@ -1,14 +1,8 @@
-function sendMail() {
-    var link = "mailto:me@example.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("This is my subject")
-             + "&body=" + escape(document.getElementById('myText').value)
-    ;
-    window.location.href = link;
-}
+
+var interval;
+var inProgress = false;
 
 $(document).ready(function() {
-
 	/**
 	 * Manage Langages
 	 **/
@@ -56,20 +50,37 @@ $(document).ready(function() {
                            );
 	});
 
+  var visibleNavbar = function() {
+    $('.navbar').removeClass("navbar-transparent");
+    $('.navbar').addClass("navbar-default");
+  }
+
+  var transparentNavbar = function() {
+    $('.navbar').addClass("navbar-transparent");
+    $('.navbar').removeClass("navbar-default");
+  }
+
 	/**
 	 * Listen to scroll to change header opacity class
 	 */
-	function checkScroll(){
+	function checkScroll() {
 	    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
-
-	    if($(window).scrollTop() <= startY){
-	        $('.navbar').addClass("navbar-transparent");
-			    $('.navbar').removeClass("navbar-default");
-	    }else{
-	        $('.navbar').addClass("navbar-default");
-	        $('.navbar').removeClass("navbar-transparent");
+      if($('.navbar-toggle').attr('aria-expanded') == "true") {
+        visibleNavbar();
+      } else if($(window).scrollTop() <= startY){
+        transparentNavbar();
+	    } else{
+        visibleNavbar();
 	    }
 	}
+
+  $('.navbar-toggle').on("click", function(){
+    if($('.navbar-toggle').attr('aria-expanded') == "true") {
+      transparentNavbar();
+    } else {
+      visibleNavbar();
+    }
+  });
 
 	if($('.navbar').length > 0){
 	    $(window).on("scroll load resize", function(){
@@ -77,11 +88,39 @@ $(document).ready(function() {
 	    });
 	}
 
+  var startTopAnimation = function() {
+    if(!inProgress) {
+      buildDotsCanvas();
+    }
+  }
+
+  var stopTopAnimation = function() {
+    inProgress = false;
+    clearInterval(interval);
+  }
+
+  var resizeWindowEnd = function() {
+    startTopAnimation();
+  }
+
+  var doit;
+  $(window).on("load resize", function() {
+    stopTopAnimation();
+    clearTimeout(doit);
+    doit = setTimeout(resizeWindowEnd, 100);
+  });
+
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() > $('#tophome').height()) {
+      stopTopAnimation();
+    } else {
+      startTopAnimation();
+    }
+  });
 });
 
-var interval;
-
-var canvasDots = function() {
+var buildDotsCanvas = function() {
+    inProgress = true;
     var canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d'),
         colorDot = '#fff',
@@ -98,8 +137,9 @@ var canvasDots = function() {
         y: 30 * canvas.height / 100
     };
 
+    var nbDots = canvas.width * canvas.height / 2280;
     var dots = {
-        nb: 600,
+        nb: nbDots,
         distance: 60,
         d_radius: 100,
         array: []
@@ -182,12 +222,4 @@ var canvasDots = function() {
     mousePosition.y = window.innerHeight / 2;
 
     interval = setInterval(createDots, 1000/30);
-};
-
-window.onload = function() {
-    canvasDots();
-};
-
-window.onresize = function(event) {
-  clearInterval(interval);
 };

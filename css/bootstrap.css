@@ -52,7 +52,7 @@ template {
 }
 a {
   background-color: transparent;
-  text-shadow: 0 0 2px #868686;
+  font-weight: bold;
 }
 a:active,
 a:hover {
@@ -1107,7 +1107,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #fed7ff;
+  color: #bc3228;
   text-decoration: none;
 }
 a:focus {
