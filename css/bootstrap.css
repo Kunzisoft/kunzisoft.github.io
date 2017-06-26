@@ -1102,7 +1102,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #df3e32;
+  color: #ffa39c;
   text-decoration: none;
 }
 a:hover,
@@ -1339,7 +1339,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #999999;
+  color: #f5f3f3;
 }
 .text-primary {
   color: #375a7f;

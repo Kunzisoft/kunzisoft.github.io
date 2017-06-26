@@ -60,13 +60,13 @@ h5 i.fa {
   DESCRIPTION CONTENT
 **/
 .description-content {
-  background: linear-gradient(180deg ,#e8d7ff, #c399ff);
+  background: linear-gradient(180deg ,#c18ee0, #f6efff);
   margin:0;
   padding:0;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
 }
-.description-content .description-icon {
+.description-icon {
   display: block;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -87,6 +87,9 @@ h5 i.fa {
 }
 .description-content .description-tile {
   min-height: 320px;
+}
+.description-content button i {
+  margin-right: 10px;
 }
 
 /**
@@ -247,13 +250,11 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
  TILE
 */
 .tile {
-  background-color: #e7d6ff;
+  background-color: #ede1fe;
   padding: 20px 20px 20px 20px;
   border-radius: 18px;
-  min-height: 420px;
-  color: #212121;
+  color: #6f577a;
   overflow: hidden;
-  cursor: pointer;
   outline: 0;
   border: 0;
   -webkit-transition: all 0.15s ease-in-out;
