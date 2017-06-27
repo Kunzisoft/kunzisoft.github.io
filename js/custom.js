@@ -32,6 +32,14 @@ $(document).ready(function() {
 		document.webL10n.setLanguage(language);
 	});
 
+	// Color projects
+	$('.project').css('background', function( index ) {
+		if($(this).data('color-gradient') != undefined) {
+			return 'linear-gradient('+$(this).data('color')+', '+$(this).data('color-gradient')+')';
+		} else
+	  	return $(this).data('color');
+	});
+
 	// Animation for scrolling
 	$('.scrollTo').on('click', function() { // Au clic sur un élément
 		var page = $(this).attr('href'); // Page cible

@@ -177,6 +177,7 @@ h5 i.fa {
   background-color: #E3CFFF;
   background-size: cover;
   color: #DF3E32;
+  border-top: 3px solid #ede1fe;
 }
 .section-bg-white h1,
 .section-bg-white h2,
@@ -192,6 +193,7 @@ h5 i.fa {
   background-color: #743998;
   background-size: cover;
   color: #F5F5F5;
+  border-top: 3px solid #bd9ed1;
 }
 .section-bg-purple h1,
 .section-bg-purple h2,
@@ -250,7 +252,7 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
  TILE
 */
 .tile {
-  background-color: #ede1fe;
+  background-color: #ecdfff;
   padding: 20px 20px 20px 20px;
   border-radius: 18px;
   color: #6f577a;
@@ -263,7 +265,7 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
   webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  height: 468px;
+  /*! height: 468px; */
 }
 .tile h1,
 .tile h2,
@@ -281,8 +283,39 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
   CAROUSEL
 */
 .carousel .row {
-  margin: 3em;
+  margin: 2.5em;
 }
-.carousel-inner > .item {
-  padding: 25px;
+@media (max-width:767px) {
+  .carousel .row {
+    margin: 0.8em;
+  }
+}
+.project {
+  padding: 20px;
+  background-color: #DF3E32;
+  border-radius: 18px;
+  webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 22px;
+}
+.project-image {
+  padding: 0;
+  margin: 0;
+}
+.project-description {
+  margin: 28px 0;
+}
+.project-image img {
+  border-radius: 8px;
+  max-width: 80%;
+  border: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.4);
+  max-height: 520px;
+  margin-bottom: 10px;
 }
