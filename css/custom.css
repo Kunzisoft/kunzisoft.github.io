@@ -231,7 +231,7 @@ table thead {
   color: white;
 }
 table td {
-  width: 25%;
+  width: 40px;
 }
 table td.title {
   background-color: #743998;
@@ -245,6 +245,18 @@ table td i.fa {
 }
 table > tbody > tr:nth-of-type(2n+1) > td.title {
   background-color: #6a308d;
+}
+table .col-hidden {
+  background-color: #f9e2e2;
+  max-width: 20px;
+  display: none;
+  -webkit-transition: width 0.5s; /* Safari */
+  transition: width 0.5s;
+}
+table .col-hidden > * {
+  display: none;
+  -webkit-transition: width 0.5s; /* Safari */
+  transition: width 0.5s;
 }
 
 /*

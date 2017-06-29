@@ -32,6 +32,34 @@ $(document).ready(function() {
 		document.webL10n.setLanguage(language);
 	});
 
+	// Tabs Table
+	var tabTableInit = function() {
+		if($( window ).width() < 600) {
+			$.each($('.tab-col'), function(keyTab, nodeTab) {
+				if(!$(this).hasClass('col-active')) {
+					$($(this).data('col')).addClass('col-hidden');
+				}
+			});
+
+			$('.tab-col').bind('click.kunzisoftEvent', function() {
+				if(!$(this).hasClass('col-active')) {
+					$.each($('.tab-col'), function(keyTab, nodeTab) {
+						$($(nodeTab).data('col')).addClass('col-hidden');
+						$(nodeTab).removeClass('col-active');
+					});
+
+					$($(this).data('col')).removeClass('col-hidden');
+					$(this).addClass('col-active');
+				}
+			});
+
+		} else {
+			$('.col-hidden').removeClass('col-hidden');
+			$('.tab-col').unbind('click.kunzisoftEvent');
+		}
+	}
+
+
 	// Color projects
 	$('.project').css('background', function( index ) {
 		if($(this).data('color-gradient') != undefined) {
@@ -90,12 +118,6 @@ $(document).ready(function() {
     }
   });
 
-	if($('.navbar').length > 0){
-	    $(window).on("scroll load resize", function(){
-	        checkScroll();
-	    });
-	}
-
   var startTopAnimation = function() {
     if(!inProgress) {
       buildDotsCanvas();
@@ -109,13 +131,14 @@ $(document).ready(function() {
 
   var resizeWindowEnd = function() {
     startTopAnimation();
+		tabTableInit();
   }
 
-  var doit;
+  var isResizing;
   $(window).on("load resize", function() {
     stopTopAnimation();
-    clearTimeout(doit);
-    doit = setTimeout(resizeWindowEnd, 100);
+    clearTimeout(isResizing);
+    isResizing = setTimeout(resizeWindowEnd, 100);
   });
 
   $(window).on("scroll", function() {
@@ -125,6 +148,12 @@ $(document).ready(function() {
       startTopAnimation();
     }
   });
+
+	if($('.navbar').length > 0){
+			$(window).on("scroll load resize", function(){
+					checkScroll();
+			});
+	}
 });
 
 var buildDotsCanvas = function() {
