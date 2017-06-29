@@ -251,7 +251,11 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
  TILE
 */
 .tile {
-  background-color: #ecdfff;
+  background: #ecdfff;
+  background: -webkit-linear-gradient(#ecdfff, #e8cafb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ecdfff, #e8cafb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ecdfff, #e8cafb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ecdfff, #e8cafb); /* Standard syntax */
   padding: 20px 20px 20px 20px;
   border-radius: 18px;
   color: #6f577a;
@@ -291,7 +295,11 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
 }
 .project {
   padding: 20px;
-  background-color: #DF3E32;
+  background: #9558ba;
+  background: -webkit-linear-gradient(#9558ba, #7e48a1);
+  background: -o-linear-gradient(#9558ba, #7e48a1);
+  background: -moz-linear-gradient(#9558ba, #7e48a1);
+  background: linear-gradient(#9558ba, #7e48a1);
   border-radius: 18px;
   webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -305,9 +313,11 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
 .project-description {
   margin: 28px 0;
 }
+.project-description p {
+  line-height: 160%;
+}
 .project-image img {
   border-radius: 8px;
-  max-width: 80%;
   border: 0;
   -webkit-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
@@ -317,4 +327,19 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.4);
   max-height: 520px;
   margin-bottom: 10px;
+}
+@media (max-width:992px) {
+  .project {
+    min-height: 1250px;
+  }
+}
+@media (max-width:767px) {
+  .project-image img {
+    max-height: 400px;
+  }
+}
+@media (max-width:410px) {
+  .project-image img {
+    max-height: 280px;
+  }
 }

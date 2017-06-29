@@ -4372,6 +4372,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav > li > a {
     padding-top: 19.5px;
     padding-bottom: 19.5px;
+    cursor: pointer;
   }
 }
 .navbar-form {
