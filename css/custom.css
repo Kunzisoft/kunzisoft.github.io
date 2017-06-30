@@ -230,8 +230,11 @@ table thead {
   font-weight: bold;
   color: white;
 }
-table td {
-  width: 40px;
+table td.high-height {
+  height: 180px;
+}
+table td.medium-height {
+  height: 126px;
 }
 table td.title {
   background-color: #743998;
@@ -247,7 +250,7 @@ table > tbody > tr:nth-of-type(2n+1) > td.title {
   background-color: #6a308d;
 }
 table .col-hidden {
-  background-color: #f9e2e2;
+  background-color: #dbc1ec;
   max-width: 20px;
   display: none;
   -webkit-transition: width 0.5s; /* Safari */

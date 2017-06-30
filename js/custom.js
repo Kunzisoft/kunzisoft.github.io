@@ -33,32 +33,50 @@ $(document).ready(function() {
 	});
 
 	// Tabs Table
+	var hideColumn = function(tabTh) {
+		if(!tabTh.hasClass('col-active')) {
+			console.log(tabTh);
+			$.each($('.tab-col'), function(keyTab, nodeTab) {
+				$($(nodeTab).data('col')).addClass('col-hidden');
+				$(nodeTab).removeClass('col-active');
+			});
+
+			initHiddenClick();
+
+			$(tabTh.data('col')).removeClass('col-hidden');
+			tabTh.addClass('col-active');
+		}
+	}
+
+	// For each click on hidden element
+	var initHiddenClick = function() {
+		$('.col-hidden').on('click', function() {
+			var dataColumn = $(this).data('col');
+			var tab = $('.tab-col').filter('[data-col="'+dataColumn+'"]');
+			hideColumn(tab);
+		});
+	}
+
 	var tabTableInit = function() {
 		if($( window ).width() < 600) {
+			// Init hidden elements
 			$.each($('.tab-col'), function(keyTab, nodeTab) {
 				if(!$(this).hasClass('col-active')) {
 					$($(this).data('col')).addClass('col-hidden');
 				}
 			});
 
+			// For each click on tab
 			$('.tab-col').bind('click.kunzisoftEvent', function() {
-				if(!$(this).hasClass('col-active')) {
-					$.each($('.tab-col'), function(keyTab, nodeTab) {
-						$($(nodeTab).data('col')).addClass('col-hidden');
-						$(nodeTab).removeClass('col-active');
-					});
-
-					$($(this).data('col')).removeClass('col-hidden');
-					$(this).addClass('col-active');
-				}
+				hideColumn($(this));
 			});
 
+			initHiddenClick();
 		} else {
 			$('.col-hidden').removeClass('col-hidden');
 			$('.tab-col').unbind('click.kunzisoftEvent');
 		}
 	}
-
 
 	// Color projects
 	$('.project').css('background', function( index ) {
