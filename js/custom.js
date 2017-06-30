@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 	// For each click on hidden element
 	var initHiddenClick = function() {
-		$('.col-hidden').on('click', function() {
+		$('.col-hidden').bind('click.kunzisoftEvent', function() {
 			var dataColumn = $(this).data('col');
 			var tab = $('.tab-col').filter('[data-col="'+dataColumn+'"]');
 			hideColumn(tab);
@@ -73,6 +73,7 @@ $(document).ready(function() {
 
 			initHiddenClick();
 		} else {
+			$('.col-hidden').unbind('click.kunzisoftEvent');
 			$('.col-hidden').removeClass('col-hidden');
 			$('.tab-col').unbind('click.kunzisoftEvent');
 		}
