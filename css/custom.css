@@ -2,6 +2,14 @@ li {
   list-style-type: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
 h1 i.fa,
 h2 i.fa,
 h3 i.fa,
@@ -301,7 +309,7 @@ table .col-hidden > * {
   CAROUSEL
 */
 .carousel .row {
-  margin: 2.5em;
+  margin: 0.5em 2.5em;
 }
 @media (max-width:767px) {
   .carousel .row {
