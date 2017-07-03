@@ -15,10 +15,10 @@ $(document).ready(function() {
 	else
 		language = navigator.language;
 	switch (language) {
-		case "fr":
+		case "en":
 			break;
 		default:
-			language="en";
+			language="fr";
 	}
 
 	// Change langage
