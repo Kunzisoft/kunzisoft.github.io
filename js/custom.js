@@ -23,12 +23,14 @@ $(document).ready(function() {
 
 	// Change langage
 	document.webL10n.setLanguage(language);
+	$('html').attr('lang', language);
 	language = language.substr(0,1).toUpperCase()+language.substr(1);
 	$('#language-text').text(language);
 
 	$('#menu-language a').on('click', function() {
 		language = $(this).text();
 		$('#language-text').text(language);
+		$('html').attr('lang', language.substr(0,1).toLowerCase()+language.substr(1));
 		document.webL10n.setLanguage(language);
 	});
 
