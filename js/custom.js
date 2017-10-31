@@ -195,7 +195,7 @@ var buildDotsCanvas = function() {
         y: 30 * canvas.height / 100
     };
 
-    var nbDots = canvas.width * canvas.height / 2280;
+    var nbDots = canvas.width * canvas.height / 8000;
     var dots = {
         nb: nbDots,
         distance: 60,
