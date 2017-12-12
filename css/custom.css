@@ -88,6 +88,7 @@ h5 i.fa {
 }
 .description-content h3, .description-content .h3 {
   color: #582289;
+  text-shadow: 1px 1px 2px #fff;
 }
 .description-content p {
   /*! min-height: 200px; */
@@ -127,6 +128,7 @@ h5 i.fa {
 .splash h1 {
   font-size: 3.5em;
   color: #ffe6a4;
+  text-shadow: 1px 1px 2px black;
 }
 .splash h2 {
   font-size: 2em;
@@ -191,6 +193,7 @@ h5 i.fa {
 .section-bg-white h2,
 .section-bg-white h3 {
   color: #9946cc;
+  text-shadow: 1px 1px 2px #fff;
 }
 .section-bg-gray {
   background-color: #F2F2F2;
@@ -207,6 +210,7 @@ h5 i.fa {
 .section-bg-purple h2,
 .section-bg-purple h3 {
   color: #ffe6a4;
+  text-shadow: 1px 1px 2px black;
 }
 
 
