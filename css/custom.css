@@ -339,6 +339,17 @@ table .col-hidden > * {
 .project-description p {
   line-height: 160%;
 }
+.project-description .logo-img {
+  border-radius: 10%;
+  width: 96px;
+  height: 96px;
+  background: #1116;
+  margin: auto auto;
+}
+.project-description .logo-img img {
+  display: block;
+  margin: auto auto;
+}
 .project-image img {
   border-radius: 8px;
   border: 0;
