@@ -294,14 +294,10 @@ table .col-hidden > * {
  TILE
 */
 .tile {
-  background: #ecdfff;
-  background: -webkit-linear-gradient(#ecdfff, #e8cafb); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#ecdfff, #e8cafb); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#ecdfff, #e8cafb); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#ecdfff, #e8cafb); /* Standard syntax */
+  background: #743998;
   padding: 20px 20px 20px 20px;
   border-radius: 18px;
-  color: #6f577a;
+  color: #edeaef;
   overflow: hidden;
   outline: 0;
   border: 0;
@@ -318,7 +314,12 @@ table .col-hidden > * {
 .tile h3,
 .tile h4,
 .tile h5 {
-  color: #582289;
+  color: #ffe6a4;
+}
+.tile h1,
+.tile h2,
+.tile h3 {
+  text-shadow: 1px 1px 2px black;
 }
 .tile ul {
   padding-left: 5px;
