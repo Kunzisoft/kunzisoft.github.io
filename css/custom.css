@@ -68,7 +68,7 @@ h5 i.fa {
   DESCRIPTION CONTENT
 **/
 .description-content {
-  background: linear-gradient(180deg ,#c18ee0, #f6efff);
+  background: linear-gradient(180deg ,#d8adf3, #e3cfff);
   margin:0;
   padding:0;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
@@ -80,11 +80,12 @@ h5 i.fa {
   padding-bottom: 50px;
   margin-bottom: 10px;
   background: url(../img/bg_description_icon.svg);
-  color: #ffedd4;
+  color: #ffffff;
   font-size: 32px;
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
+  text-shadow: none;
 }
 .description-content h3, .description-content .h3 {
   color: #582289;
@@ -180,37 +181,52 @@ h5 i.fa {
   SECTION
 */
 .section {
-  padding: 5em 0 5em;
-  border-bottom: 1px solid rgba(0, 0, 0, .05);
+    padding: 5em 0 5em;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 .section-bg-white {
-  background-color: #E3CFFF;
-  background-size: cover;
-  color: #DF3E32;
-  border-top: 3px solid #ede1fe;
+    background-color: #E3CFFF;
+    background-size: cover;
+    color: #DF3E32;
+    border-top: 3px solid #ede1fe;
 }
 .section-bg-white h1,
 .section-bg-white h2,
 .section-bg-white h3 {
-  color: #9946cc;
-  text-shadow: 1px 1px 2px #fff;
+    color: #9946cc;
+    text-shadow: 1px 1px 2px #fff;
 }
 .section-bg-gray {
-  background-color: #F2F2F2;
-  background-size: cover;
-  color: #6B4A9C;
+    background-color: #5b2f75;
+    background-size: cover;
+    color: #F5F5F5;
+}
+.section-bg-gray h1,
+.section-bg-gray h2,
+.section-bg-gray h3 {
+    color: #ffe6a4;
+    text-shadow: 1px 1px 2px black;
 }
 .section-bg-purple {
-  background-color: #743998;
-  background-size: cover;
-  color: #F5F5F5;
-  border-top: 3px solid #bd9ed1;
+    background-color: #743998;
+    background-size: cover;
+    color: #F5F5F5;
+    border-top: 3px solid #bd9ed1;
 }
 .section-bg-purple h1,
 .section-bg-purple h2,
 .section-bg-purple h3 {
-  color: #ffe6a4;
-  text-shadow: 1px 1px 2px black;
+    color: #ffe6a4;
+    text-shadow: 1px 1px 2px black;
+}
+.section .carousel-inner {
+    color: #ffffff;
+}
+.section .carousel-inner h1,
+.section .carousel-inner h2,
+.section .carousel-inner h3{
+    color: #ffffff;
+    text-shadow: none;
 }
 
 
