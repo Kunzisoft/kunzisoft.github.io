@@ -292,6 +292,13 @@ table .col-hidden > * {
 }
 
 /*
+ BUTTON
+ */
+.btn .fa {
+  margin-right: 5px;
+}
+
+/*
  TILE
 */
 .tile {
