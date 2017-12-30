@@ -292,6 +292,20 @@ table .col-hidden > * {
 }
 
 /*
+ * CRYPTO
+ */
+.cryptokey {
+    text-align: center;
+    padding: 18px;
+    background: #743998;
+    border-radius: 18px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.cryptokey img {
+    padding-bottom: 16px;
+}
+
+/*
  BUTTON
  */
 .btn .fa {

@@ -268,7 +268,7 @@
           </div>
           <div class="modal-footer">
             <button class="btn btn-info external-link quote-email" data-email="mailto:contact@kunzisoft.com"><i class="fa fa-flask"></i> <span data-l10n-id="askQuote">Demander un devis</span></button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><span data-l10n-id="close">Fermer</span></button>
           </div>
         </div>
       </div>
@@ -465,8 +465,11 @@
           <div id="contribute" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <h2><i class="fa fa-heart"></i><span data-l10n-id="donateForLove">Donner par amour</span></h2>
             <p class="lead" data-l10n-id="donateForLoveDesc">Vous voulez supporter votre projet favori, faites une donation et devenez un kunzite :</p>
-            <a class="btn btn-success" title="Donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KM6QMDAXZM3UU"><i class="fa fa-paypal"></i> <span data-l10n-id="donate">Donner</span></a>
-            <a class="btn btn-success" title="Donate" href="https://liberapay.com/Kunzisoft/donate"><i class="fa fa-credit-card"></i> <span data-l10n-id="donate">Donner</span></a>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a class="btn btn-success" title="Donate Paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KM6QMDAXZM3UU"><i class="fa fa-paypal"></i>Paypal</a>
+                <div class="btn btn-success" data-toggle="modal" data-target="#cryptocurrency" title="Donate Bitcoin"><i class="fa fa-btc"></i>Bitcoin</div>
+                <a class="btn btn-success" title="Donate Liberapay" href="https://liberapay.com/Kunzisoft/donate"><i class="fa fa-credit-card"></i>LP</a>
+            </div>
             <p><i class="fa fa-lock"></i><span data-l10n-id="payement">Pas d'inquiétude, nous utilisons paypal / liberapay et c'est totalement sécurisé</span></p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -475,7 +478,40 @@
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <h2><i class="fa fa-wrench"></i><span data-l10n-id="offerServices">Proposez vos services</span></h2>
             <p class="lead" data-l10n-id="offerServicesDesc">Vous avez de nombreuses compétences, voulez augmenter vos connaissances ou résoudre un petit bug :</p>
-            <a class="btn btn-default" target="_blank" href="https://github.com/Kunzisoft" title="Ask community"><i class="fa fa-github"></i> <span data-l10n-id="contribute">Contribuer</span></a>
+            <a class="btn btn-success" target="_blank" href="https://github.com/Kunzisoft" title="Ask community"><i class="fa fa-github"></i> <span data-l10n-id="contribute">Contribuer</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="cryptocurrency" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" data-l10n-id="cryptocurrency">Crypto-Monnaie</h4>
+          </div>
+          <div class="modal-body">
+          <div class="description">
+            <div>
+                <p><span data-l10n-id="cryptoDesc">
+                    La crypto-monnaie est un réseau de consensus qui permet un nouveau système de paiement et une monnaie entièrement numérique. Du point de vue de l'utilisateur, Bitcoin ressemble beaucoup à de l'argent liquide pour Internet.
+                </span></p>
+                <img src="img/bitcoin.png" alt="QR bitcoin">
+                <p><span data-l10n-id="cryptoScan">Scanner ce QR avec votre application portefeuille</span></p>
+                <div class="cryptokey">
+                    <img src="img/qr_256.png" alt="QR bitcoin">
+                    <a href="bitcoin:1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F" target="_blank">1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F</a>
+                </div>
+            </div>
+        </div>
+            
+          </div>
+          <div class="modal-footer">
+            <a href="https://bitcoin.org/" type="button" class="btn btn-info"><span data-l10n-id="cryptoMore">Plus d'infos</span></a>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><span data-l10n-id="close">Fermer</span></button>
           </div>
         </div>
       </div>
