@@ -73,6 +73,8 @@ h5 i.fa {
   padding:0;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
+  color: #8838b9;
+  text-shadow: 1px 1px 1px #f4f0f7;
 }
 .description-icon {
   display: block;
@@ -88,8 +90,7 @@ h5 i.fa {
   text-shadow: none;
 }
 .description-content h3, .description-content .h3 {
-  color: #582289;
-  text-shadow: 1px 1px 2px #fff;
+  color: #8838b9;
 }
 .description-content p {
   /*! min-height: 200px; */
