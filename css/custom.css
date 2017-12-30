@@ -8,6 +8,7 @@ h3,
 h4,
 h5 {
   text-align: center;
+  margin-bottom: 18px;
 }
 
 h1 i.fa,
@@ -80,7 +81,7 @@ h5 i.fa {
   display: block;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   background: url(../img/bg_description_icon.svg);
   color: #ffffff;
   font-size: 32px;
@@ -89,8 +90,15 @@ h5 i.fa {
   text-align: center;
   text-shadow: none;
 }
+h1 i.fa.description-icon,
+h2 i.fa.description-icon,
+h3 i.fa.description-icon,
+h4 i.fa.description-icon,
+h5 i.fa.description-icon {
+    margin-right: 0px;
+}
 .description-content h3, .description-content .h3 {
-  color: #8838b9;
+  color: #df3e32;
 }
 .description-content p {
   /*! min-height: 200px; */
