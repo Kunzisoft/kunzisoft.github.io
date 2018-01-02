@@ -325,7 +325,7 @@ table .col-hidden > * {
 */
 .tile {
   background: #743998;
-  padding: 20px 20px 20px 20px;
+  padding: 0px 20px 0px 20px;
   border-radius: 18px;
   color: #edeaef;
   overflow: hidden;
