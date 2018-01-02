@@ -70,7 +70,7 @@ h5 i.fa {
   DESCRIPTION CONTENT
 **/
 .description-content {
-  background: linear-gradient(180deg ,#d8adf3, #e3cfff);
+  background: #e3cfff;
   margin:0;
   padding:0;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
