@@ -9,6 +9,7 @@ h4,
 h5 {
   text-align: center;
   margin-bottom: 18px;
+  font-weight: bold;
 }
 
 h1 i.fa,
@@ -83,7 +84,7 @@ h5 i.fa {
   padding-bottom: 50px;
   margin-bottom: 5px;
   background: url(../img/bg_description_icon.svg);
-  color: #ffffff;
+  color: #f4e5ff;
   font-size: 32px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -137,7 +138,7 @@ h5 i.fa.description-icon {
 }
 .splash h1 {
   font-size: 3.5em;
-  color: #ffe6a4;
+  color: #f7ecff;
   text-shadow: 1px 1px 2px black;
 }
 .splash h2 {
@@ -214,8 +215,8 @@ h5 i.fa.description-icon {
 .section-bg-gray h1,
 .section-bg-gray h2,
 .section-bg-gray h3 {
-    color: #ffe6a4;
-    text-shadow: 1px 1px 2px black;
+    color: #d5b9fb;
+    text-shadow: 1px 1px 8px #1e1921;
 }
 .section-bg-purple {
     background-color: #743998;
@@ -226,8 +227,8 @@ h5 i.fa.description-icon {
 .section-bg-purple h1,
 .section-bg-purple h2,
 .section-bg-purple h3 {
-    color: #ffe6a4;
-    text-shadow: 0px 1px 2px #421c56;
+    color: #ebdcff;
+    text-shadow: 0px 1px 8px #311640;
 }
 .section .carousel-inner {
     color: #ffffff;
@@ -358,12 +359,12 @@ table .col-hidden > * {
 .tile h3,
 .tile h4,
 .tile h5 {
-  color: #ffe6a4;
+  color: #f1e7ff;
 }
 .tile h1,
 .tile h2,
 .tile h3 {
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 8px #25142f;
 }
 .tile ul {
   padding-left: 5px;
