@@ -106,10 +106,14 @@ h5 i.fa.description-icon {
   font-size: 1.2em;
 }
 .description-content .description-tile {
-  min-height: 320px;
+  min-height: 439px;
+  padding: 0px 20px 0px 20px;
 }
 .description-content button i {
   margin-right: 10px;
+}
+.description-content .tile {
+    text-shadow: none;
 }
 
 /**
@@ -356,7 +360,7 @@ table .col-hidden > * {
   webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  min-height: 468px;
+  min-height: 460px;
 }
 .tile h1,
 .tile h2,
