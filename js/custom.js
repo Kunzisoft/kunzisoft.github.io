@@ -93,7 +93,10 @@ $(document).ready(function() {
     $('.scrollTo').on('click', function() { // Au clic sur un élément
         var page = $(this).attr('href'); // Page cible
         var speed = 750; // Durée de l'animation (en ms)
-        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        var margin = 20;
+        if(page == "#contact")
+            margin = 50;
+        $('html, body').animate( { scrollTop: $(page).offset().top - margin }, speed ); // Go
         return false;
     });
 
@@ -184,7 +187,7 @@ var buildDotsCanvas = function() {
         colorDot = '#fff',
         color = '#fff';
     canvas.width = window.innerWidth - 20;
-    canvas.height = window.innerHeight - 80;
+    canvas.height = window.innerHeight - window.innerHeight*20/100 - 20;
     canvas.style.display = 'block';
     ctx.fillStyle = colorDot;
     ctx.lineWidth = .1;
@@ -195,7 +198,7 @@ var buildDotsCanvas = function() {
         y: 30 * canvas.height / 100
     };
 
-    var nbDots = canvas.width * canvas.height / 8000;
+    var nbDots = canvas.width * canvas.height / 6800;
     var dots = {
         nb: nbDots,
         distance: 60,
