@@ -205,56 +205,56 @@ h5 i.fa.description-icon {
     padding: 2.5em 0 2.5em 0;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
-.section-bg-white {
+.section-bg-light {
     background-color: #E3CFFF;
     background-size: cover;
     color: #DF3E32;
     border-top: 3px solid #ede1fe;
 }
-.section-bg-white h1,
-.section-bg-white h2,
-.section-bg-white h3 {
+.section-bg-light h1,
+.section-bg-light h2,
+.section-bg-light h3 {
     color: #9946cc;
     text-shadow: 1px 1px 2px #fff;
 }
-.section-bg-gray {
-    background-color: #5b2f75;
-    background-size: cover;
-    color: #F5F5F5;
-}
-.section-bg-gray h1,
-.section-bg-gray h2,
-.section-bg-gray h3 {
-    color: #ffffff;
-    text-shadow: 1px 1px 8px #1e1921;
-}
-.section-bg-purple {
+.section-bg-dark {
     background-color: #743998;
     background-size: cover;
     color: #F5F5F5;
     border-top: 1px solid #bd9ed1;
     padding-top: 6px;
 }
-.section-bg-purple h1,
-.section-bg-purple h2,
-.section-bg-purple h3 {
+.section-bg-dark h1,
+.section-bg-dark h2,
+.section-bg-dark h3 {
     color: #ebdcff;
     text-shadow: 0px 1px 8px #311640;
 }
+.section-bg-projects {
+    background-color: #743998;
+    background-size: cover;
+    color: #F5F5F5;
+}
+.section-bg-projects h1,
+.section-bg-projects h2,
+.section-bg-projects h3 {
+    color: #ffffff;
+    text-shadow: 1px 1px 8px #1e1921;
+}
 @media (max-width:767px) {
-  .section-bg-gray h1,
-  .section-bg-gray h2,
-  .section-bg-gray h3 {
+  .section-bg-projects h1,
+  .section-bg-projects h2,
+  .section-bg-projects h3 {
     font-size: 23px;
     max-width: 100px;   
   }
 }
 @media (max-width:300px) {
-  .section-bg-gray h1,
-  .section-bg-gray h2,
-  .section-bg-gray h3 {
+  .section-bg-projects h1,
+  .section-bg-projects h2,
+  .section-bg-projects h3 {
     font-size: 16px;
-    max-width: 100px;
+    max-width: 80px;
   }
 }
 
