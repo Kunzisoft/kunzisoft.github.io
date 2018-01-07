@@ -80,8 +80,7 @@ h5 i.fa {
 }
 .description-icon {
   display: block;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 38px 0 38px 0;
   margin-bottom: 5px;
   background: url(../img/bg_description_icon.svg);
   color: #f4e5ff;
@@ -242,6 +241,22 @@ h5 i.fa.description-icon {
     color: #ebdcff;
     text-shadow: 0px 1px 8px #311640;
 }
+@media (max-width:767px) {
+  .section-bg-gray h1,
+  .section-bg-gray h2,
+  .section-bg-gray h3 {
+    font-size: 23px;
+    max-width: 100px;   
+  }
+}
+@media (max-width:300px) {
+  .section-bg-gray h1,
+  .section-bg-gray h2,
+  .section-bg-gray h3 {
+    font-size: 16px;
+    max-width: 100px;
+  }
+}
 
 
 /**
@@ -388,7 +403,8 @@ table .col-hidden > * {
   Projects
 */
 .project-item {
-  min-height: 470px; 
+  min-height: 520px;
+  padding-top: 60px;
 }
 .project {
   background: #9558ba;
@@ -408,7 +424,7 @@ table .col-hidden > * {
   border-radius: 10%;
   width: 96px;
   height: 96px;
-  background: #1111111a;
+  /*background: #1111111a;*/
   padding: 0 0 0 0;
   margin: -50px 0 0 20px;
 }
