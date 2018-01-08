@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="icon" href="./img/favicon.ico" />
-    <title>Kunzisoft</title>
-
-    <meta http-equiv="refresh" content="0; url=https://github.com/Kunzisoft/KeePassDX" />
+    <script type="text/javascript" src="../js/marked.min.js"></script>
+    <link rel="icon" href="../img/favicon.ico" />
+    <title>Keepass DX</title>
+    <link rel="stylesheet" href="../css/markdown.css">
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            color: rgb(67, 160, 71);
+        }
+    </style>
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
-    <p><a href="https://github.com/Kunzisoft/KeePassDX">Redirect</a></p>
+    <div>
+        Powered by <a href="http://kunzisoft.com">Kunzisoft</a>
+    </div>
+    <div id="content"></div>
+    <script type="text/javascript">
+        var sScriptURL ='https://raw.githubusercontent.com/Kunzisoft/KeePassDX/master/ReadMe.md'; 
+        var oReq = new XMLHttpRequest(); 
+        oReq.addEventListener("load", function fLoad() {
+            document.getElementById('content').innerHTML =
+            marked(this.responseText);
+        }); 
+        oReq.open("GET", sScriptURL);
+        oReq.send();
+    </script>
   </body>
 </html>
