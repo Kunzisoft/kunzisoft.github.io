@@ -227,7 +227,6 @@ h5 i.fa.description-icon {
     background-size: cover;
     color: #F5F5F5;
     border-top: 1px solid #bd9ed1;
-    padding-top: 6px;
 }
 .section-bg-dark h1,
 .section-bg-dark h2,
@@ -245,6 +244,9 @@ h5 i.fa.description-icon {
 .section-bg-projects h3 {
     color: #ffffff;
     text-shadow: 1px 1px 8px #1e1921;
+}
+.section-smallTop {
+    padding-top: 6px;
 }
 @media (max-width:767px) {
   .section-bg-projects h1,
