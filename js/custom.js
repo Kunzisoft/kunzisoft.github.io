@@ -14,12 +14,9 @@ $(document).ready(function() {
         language = navigator.browserLanguage;
     else
         language = navigator.language;
-    switch (language) {
-        case "en":
-                break;
-        default:
-                language="fr";
-    }
+    language="en";
+    if(language.toLowerCase().includes("fr"))
+        language = "fr";
 
     // Change langage
     document.webL10n.setLanguage(language);
