@@ -213,7 +213,7 @@ h5 i.fa.description-icon {
 .section-bg-light {
     background-color: #E3CFFF;
     background-size: cover;
-    color: #DF3E32;
+    color: #743998;
     border-top: 3px solid #ede1fe;
 }
 .section-bg-light h1,
@@ -283,9 +283,11 @@ footer p {
   MODAL
 */
 .modal-dialog {
-    margin: 30px auto;
+  margin: 30px auto;
 }
-
+.modal-title a {
+  color: #565656;
+}
 /*
   TABLE
 */
@@ -332,12 +334,24 @@ table .col-hidden > * {
 .cryptokey {
     text-align: center;
     padding: 18px;
-    background: #743998;
+    background: white;
     border-radius: 18px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .cryptokey img {
     padding-bottom: 16px;
+    max-width:100%;
+    max-height:100%;
+}
+@media (max-width:767px) {
+  .cryptokey a {
+    font-size: 0.8em;      
+  }
+}
+@media (max-width:300px) {
+  .cryptokey a {
+    font-size: 0.6em;      
+  }
 }
 
 /*

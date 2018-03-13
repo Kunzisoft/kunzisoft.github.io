@@ -50,10 +50,10 @@
                         
                     </li>
                     <li>
-                        <a class="scrollTo" href="#why" data-l10n-id="how">Pourquoi ?</a>
+                        <a class="scrollTo" href="#why" data-l10n-id="why">Pourquoi ?</a>
                     </li>
                     <li>
-                        <a class="scrollTo" href="#how" data-l10n-id="why">Comment ?</a>
+                        <a class="scrollTo" href="#how" data-l10n-id="how">Comment ?</a>
                     </li>
                     <li>
                       <div class="dropdown">
@@ -72,19 +72,11 @@
         </div>
     </nav>
 
-    <div id="why" class="section section-bg-dark">
+    <div id="love" class="section section-bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <h2><i class="fa fa-coffee"></i></h2>
-            <p class="lead" data-l10n-id="donationDescA">Vous pouvez soutenir votre projet préféré et donner votre avis, il suffit de mettre en commentaire les améliorations que vous aimeriez apporter.</p>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h2><i class="fa fa-heart"></i></h2>
-            <p class="lead" data-l10n-id="donationDescB">Chaque donation est utilisée afin de créer des logiciels libres. Un logiciel libre est plus sécurisé, ouvert, respecte votre vie privée et chacun peut ajouter des fonctionnalités ou résoudre un bug.</p>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">            
-            <h2><i class="fa fa-hand-spock-o"></i></h2>
             <p class="lead" data-l10n-id="donationDescC">Une petite donation fait toute la différence, les logiciels libres sont créés sur la base du volontaria. Vous permettez donc des mises à jour régulières et vous augmentez la motivation des développeurs.</p>
           </div>
         </div>
@@ -94,60 +86,146 @@
     <div id="how" class="section section-bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2><i class="fa fa-coffee"></i></h2>
+            <p class="lead" data-l10n-id="donationDescA">Vous pouvez soutenir votre projet préféré et donner votre avis, il suffit de mettre en commentaire les améliorations que vous aimeriez apporter.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="tile">
+              <h3><i class="fa fa-paypal description-icon"></i>Paypal</h3>
+              <p class="lead" data-l10n-id="paypalDesc">Paypal est une façon commune de payer de manière sécurisée sur internet, c'est la solution la plus facile pour donner.</p>
+              <a class="btn btn-success" title="Donate Paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KM6QMDAXZM3UU"><i class="fa fa-paypal"></i>Paypal</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="tile">
+              <h3><i class="fa fa-credit-card description-icon"></i>Liberapay</h3>
+              <p class="lead" data-l10n-id="liberapayDesc">Liberapay est une manière très élégante de faire des donations régulières, vous assurez ainsi la pérénité d'un projet.</p>
+              <a class="btn btn-success" title="Donate Liberapay" href="https://liberapay.com/Kunzisoft/donate"><i class="fa fa-credit-card"></i>Liberapay</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <div class="tile">
               <h3><i class="fa fa-bitcoin description-icon"></i><span data-l10n-id="cryptocurrency">Crypto-Monnaie</span></h3>
               <p class="lead" data-l10n-id="cryptoDesc">
                     La crypto-monnaie est un réseau de consensus qui permet un nouveau système de paiement et une monnaie entièrement numérique.
               </p>
-              <div class="btn btn-info" data-toggle="modal" data-target="#cryptocurrency" title="Donate Bitcoin"><i class="fa fa-btc"></i>Bitcoin</div>
+              <div class="btn-group" role="group" aria-label="Donation buttons">
+                <div class="btn btn-success" title="Donate Bitcoin" data-toggle="modal" data-target="#bitcoin">
+                    <img src="img/bitcoin.png" height="28" width="28" alt="Logo bitcoin"><br />Bitcoin</div>
+                <div class="btn btn-success" title="Donate Litecoin" data-toggle="modal" data-target="#litecoin">
+                    <img src="img/litecoin.png" height="28" width="28" alt="Logo litecoin"><br />Litecoin</div>
+                <div class="btn btn-success" title="Donate Ethereum" data-toggle="modal" data-target="#ethereum">
+                    <img src="img/ethereum.png" height="28" width="28" alt="Logo ethereum"><br />Ethereum</div>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-            <div class="tile">
-              <h3><i class="fa fa-paypal description-icon"></i>Paypal</h3>
-              <p class="lead" data-l10n-id="paypalDesc">Paypal est une façon commune de payer de manière sécurisée sur internet, c'est la solution la plus facile pour donner.</p>
-              <a class="btn btn-info" title="Donate Paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KM6QMDAXZM3UU"><i class="fa fa-paypal"></i>Paypal</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-            <div class="tile">
-              <h3><i class="fa fa-credit-card description-icon"></i>Liberapay</h3>
-              <p class="lead" data-l10n-id="liberapayDesc">Liberapay est une manière très élégante de faire des donations régulières, vous assurez ainsi la pérénité d'un projet.</p>
-              <a class="btn btn-info" title="Donate Liberapay" href="https://liberapay.com/Kunzisoft/donate"><i class="fa fa-credit-card"></i>LP</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p><i class="fa fa-lock"></i><span data-l10n-id="payement">Pas d'inquiétude, c'est totalement sécurisé</span></p>
           </div>
         </div>
       </div>
     </div>
     
-    <div id="cryptocurrency" class="modal fade" role="dialog">
+    <div id="why" class="section section-bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">            
+            <h2><i class="fa fa-hand-spock-o"></i></h2>
+            <p class="lead" data-l10n-id="donationDescB">Chaque donation est utilisée afin de créer des logiciels libres. Un logiciel libre est plus sécurisé, ouvert, respecte votre vie privée et chacun peut ajouter des fonctionnalités ou résoudre un bug.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="mining" class="section section-bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">            
+            <h2><i class="fa fa-pagelines"></i></h2>
+            <p class="lead" data-l10n-id="donationDescD">Vous ne pouvez pas donner, mais vous souhaitez contribuer ! Vous pouvez miner des cryptomonnaies pour nous aider. Le minage n'utilise que la puissance de votre ordinateur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="bitcoin" class="modal fade" role="dialog">
       <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Bitcoin</h4>
+            <h4 class="modal-title"><a href="https://bitcoin.org/"><img src="img/bitcoin.png" alt="Logo bitcoin" /><span> Bitcoin</span></a></h4>
+          </div>
+          <div class="modal-body">
+              <div class="description">
+                <div>
+                    <p><span data-l10n-id="cryptoScan">Scanner ce QR avec votre application portefeuille</span></p>
+                    <div class="cryptokey">
+                        <img src="img/bitcoin_qr.png" alt="QR bitcoin">
+                        <a href="bitcoin:1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F" target="_blank">1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F</a>
+                    </div>
+                </div>
+              </div> 
+          </div>
+          <div class="modal-footer">
+            <a href="https://blockchain.info/address/1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F" type="button" class="btn btn-info"><span>Blockchain</span></a>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><span data-l10n-id="close">Fermer</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="litecoin" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><a href="https://litecoin.org/"><img src="img/litecoin.png" alt="Logo litecoin" /> Litecoin</a></h4>
           </div>
           <div class="modal-body">
           <div class="description">
             <div>
-                <img src="img/bitcoin.png" alt="QR bitcoin">
                 <p><span data-l10n-id="cryptoScan">Scanner ce QR avec votre application portefeuille</span></p>
                 <div class="cryptokey">
-                    <img src="img/qr_256.png" alt="QR bitcoin">
-                    <a href="bitcoin:1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F" target="_blank">1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F</a>
+                    <img src="img/litecoin_qr.png" alt="QR litecoin">
+                    <a href="litecoin:LRmhvGbKNXFLTxyK8Q9zBxDXjBWm6Rzt34" target="_blank">LRmhvGbKNXFLTxyK8Q9zBxDXjBWm6Rzt34</a>
                 </div>
             </div>
         </div>
             
           </div>
           <div class="modal-footer">
-            <a href="https://bitcoin.org/" type="button" class="btn btn-info"><span data-l10n-id="cryptoMore">Plus d'infos</span></a>
+            <a href="https://bchain.info/LTC/addr/LRmhvGbKNXFLTxyK8Q9zBxDXjBWm6Rzt34" type="button" class="btn btn-info"><span>Blockchain</span></a>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><span data-l10n-id="close">Fermer</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ethereum" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><a href="https://www.ethereum.org/"><img src="img/ethereum.png" alt="Logo ethereum" /> Ethereum</a></h4>
+          </div>
+          <div class="modal-body">
+          <div class="description">
+            <div>
+                <p><span data-l10n-id="cryptoScan">Scanner ce QR avec votre application portefeuille</span></p>
+                <div class="cryptokey">
+                    <img src="img/ethereum_qr.png" alt="QR bitcEthereumoin">
+                    <a href="ethereum:0x6F5De8c22C4869c4a5D3a48975a42C9498de3CAB" target="_blank">0x6F5De8c22C4869c4a5D3a48975a42C9498de3CAB</a>
+                </div>
+            </div>
+        </div>
+            
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.etherchain.org/account/6F5De8c22C4869c4a5D3a48975a42C9498de3CAB" type="button" class="btn btn-info"><span>Blockchain</span></a>
             <button type="button" class="btn btn-default" data-dismiss="modal"><span data-l10n-id="close">Fermer</span></button>
           </div>
         </div>
