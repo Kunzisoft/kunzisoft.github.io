@@ -283,9 +283,11 @@ footer p {
   MODAL
 */
 .modal-dialog {
-    margin: 30px auto;
+  margin: 30px auto;
 }
-
+.modal-title a {
+  color: #565656;
+}
 /*
   TABLE
 */
