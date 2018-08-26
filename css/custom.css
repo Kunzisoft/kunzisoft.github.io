@@ -145,22 +145,25 @@ h5 i.fa.description-icon {
   width: 100%;
 }
 .splash h1 {
-  font-size: 3.5em;
+  font-size: 3.6em;
   color: #e2c5f5;
   text-shadow: 1px 1px 2px black;
 }
 .splash h2 {
-  font-size: 1.8em;
-  margin-top: 20px;
-  color: #c69ad7;
-  text-shadow: 0px 1px 2px #421c56;
+  color: #dfabf9;
+  text-shadow: 0px 1px 24px #b75db0;
+  font-size: 2.4em;
+  margin-top: 1.4em;
 }
 .splash h3 {
-  color: #510078;
-  text-shadow: 0px 1px 24px #e7b3d9;
+  font-size: 1.4em;
+  margin-top: 1em;
+  color: #d196e9;
+  text-shadow: 0px 1px 2px #6b5c74;
 }
 .splash p {
-  font-size: 1.5em;
+  font-size: 1.4em;
+  color: #eaafc3;
 }
 .splash .splash-form {
   text-align: left;
@@ -192,10 +195,12 @@ h5 i.fa.description-icon {
     width: 100px;
   }
   .splash h1 {
-    font-size: 2em;
+    font-size: 3.2em;
   }
   .splash h2 {
-    margin-top: 20px;
+    font-size: 1.6em;
+  }
+  .splash h3 {
     font-size: 1.2em;
   }
   .splash p {
