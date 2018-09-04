@@ -64,13 +64,62 @@ i.fa + span {
 }
 @media (min-width:768px) {
   .navbar-transparent {
-    background-color: #ececec1a;
+    background-color: rgba(116, 57, 152, 0.08);
   }
   .navbar-transparent a {
     color: white;
   }
 }
 
+/**
+  SPLASH
+**/
+.award {
+  width: 360px;
+}
+
+.award:after {
+  transform: scaleX(-1);
+}
+
+.award:after,
+.award:before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 160px;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/laurel.svg");
+}
+
+@media (max-width:767px) {
+  .award {
+    width: 270px;
+  }
+  .award img {
+    width: 90px;
+  }
+  .award:after,
+  .award:before {
+    width: 90px;
+    height: 120px;
+  }
+}
+@media (max-width:300px) {
+  .award {
+    width: 240px;
+  }
+  .award img {
+    width: 80px;
+  }
+  .award:after,
+  .award:before {
+    width: 80px;
+    height: 100px;
+  }
+}
 /**
   DESCRIPTION CONTENT
 **/
