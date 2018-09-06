@@ -55,26 +55,24 @@ $(document).ready(function() {
         });
     }
 
-    var tabTableInit = function() {
-        if($( window ).width() < 600) {
-            // Init hidden elements
-            $.each($('.tab-col'), function(keyTab, nodeTab) {
-                    if(!$(this).hasClass('col-active')) {
-                            $($(this).data('col')).addClass('col-hidden');
-                    }
-            });
+    if($( window ).width() < 600) {
+        // Init hidden elements
+        $.each($('.tab-col'), function(keyTab, nodeTab) {
+                if(!$(this).hasClass('col-active')) {
+                        $($(this).data('col')).addClass('col-hidden');
+                }
+        });
 
-            // For each click on tab
-            $('.tab-col').bind('click.kunzisoftEvent', function() {
-                    hideColumn($(this));
-            });
+        // For each click on tab
+        $('.tab-col').bind('click.kunzisoftEvent', function() {
+                hideColumn($(this));
+        });
 
-            initHiddenClick();
-        } else {
-            $('.col-hidden').unbind('click.kunzisoftEvent');
-            $('.col-hidden').removeClass('col-hidden');
-            $('.tab-col').unbind('click.kunzisoftEvent');
-        }
+        initHiddenClick();
+    } else {
+        $('.col-hidden').unbind('click.kunzisoftEvent');
+        $('.col-hidden').removeClass('col-hidden');
+        $('.tab-col').unbind('click.kunzisoftEvent');
     }
 
     // Color projects
