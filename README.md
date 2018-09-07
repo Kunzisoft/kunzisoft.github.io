@@ -1,22 +1,28 @@
-# Kunzisoft
+# Kunzisoft
+<img src="https://raw.githubusercontent.com/Kunzisoft/kunzisoft.github.io/master/img/logo.png">
 
 ## Link
-http://www.kunzisoft.com/
-https://kunzisoft.blogspot.com/
-
-<img src="https://raw.githubusercontent.com/Kunzisoft/Kunzisoft-web/master/img/logo.png">
+https://www.kunzisoft.com/
 
 ## Description
 Kunzisoft is a community web project create for build awesome softwares and applications with skills of volonteers.
 Each trades, and not only developpers can contribuate and become a kunzite, a beautifull purple jewel that glows in the night.
 
-## Contribute
-You can add your features and ideas and contribuate in github
+## License
 
-Donations will be used to create free and open source applications.
+ Copyright (c) 2018 Jeremy Jamet / [Kunzisoft](https://www.kunzisoft.com).
 
-[![Donation Paypal](https://4.bp.blogspot.com/-ncaIbUGaHOk/WfhaThYUPGI/AAAAAAAAAVQ/_HidNgdB1q4DaC24ujaKNzH64KUUJiQewCLcBGAs/s1600/pay-with-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KM6QMDAXZM3UU "Kunzisoft Paypal Donation")
+ This file is part of kunzisoft.github.io
 
-<a href="bitcoin:1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F"><img src="https://2.bp.blogspot.com/-K7-LKnSZd7c/WkvIKpLdmKI/AAAAAAAAAVs/-5LTimDq5IURMHwMmEP5VPTT53b2EUsswCLcBGAs/s1600/donate-with-bitcoin.png" alt="Kunzisoft Bitcoin" />Bitcoin wallet address : 1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F</a>
+  kunzisoft.github.io is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
 
-[![Donation Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Kunzisoft/donate "Kunzisoft Liberapay Donation")
+  kunzisoft.github.io is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with kunzisoft.github.io.  If not, see <http://www.gnu.org/licenses/>.
