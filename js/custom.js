@@ -91,6 +91,9 @@ $(document).ready(function() {
         return false;
     });
 
+    // Swipe carousel
+    $("#projects-carousel").carousel()
+
     // Send quote mail
     $('.quote-email').on('click', function() {
     var formula = $('input:radio[name=formula]:checked').val();

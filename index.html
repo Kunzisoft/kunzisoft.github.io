@@ -16,6 +16,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/carousel-swipe.js"></script>
     <script type="text/javascript" src="./js/ocanvas-2.8.8.min.js"></script>
     <script type="text/javascript" src="./js/l10n.js"></script>
     <link rel="prefetch" type="application/l10n" href="locales/locales.ini" />
@@ -304,12 +305,15 @@
     </div>
 
     <div id="achievements" class="section section-bg-projects">
-      <div class="container">
-        
-        <div class="row">
 
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="project-item">
+      <div id="projects-carousel" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+              <div class="item active row">
+                  <div class="col-xs-1 col-sm-0 col-md-2 col-lg-3"></div>
+                  <div class="project-item col-xs-12 col-sm-10 col-md-8 col-lg-6">
                     <div class="project-logo">
                         <img src="https://raw.githubusercontent.com/Kunzisoft/KeePassDX/master/art/icon.png" alt="logo" />
                     </div>
@@ -332,10 +336,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-         
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="project-item">
+                  <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"> </div>
+              </div>
+
+              <div class="item row">
+                  <div class="col-xs-1 col-sm-0 col-md-2 col-lg-3"></div>
+                  <div class="project-item col-xs-12 col-sm-10 col-md-8 col-lg-6">
                     <div class="project-logo">
                         <img src="https://raw.githubusercontent.com/Kunzisoft/Android-SwitchDateTimePicker/master/art/logo.png" alt="logo" />
                     </div>
@@ -354,10 +360,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="project-item">
+                  <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"> </div>
+              </div>
+
+              <div class="item row">
+                  <div class="col-xs-1 col-sm-0 col-md-2 col-lg-3"></div>
+                  <div class="project-item col-xs-12 col-sm-10 col-md-8 col-lg-6">
                     <div class="project-logo">
                         <img src="https://raw.githubusercontent.com/Kunzisoft/RememBirthday/master/art/logo.png" alt="logo" />
                     </div>
@@ -376,10 +384,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="project-item">
+                  <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"> </div>
+              </div>
+
+              <div class="item row">
+                  <div class="col-xs-1 col-sm-0 col-md-2 col-lg-3"></div>
+                  <div class="project-item col-xs-12 col-sm-10 col-md-8 col-lg-6">
                     <div class="project-logo">
                         <img src="https://raw.githubusercontent.com/Kunzisoft/AndroidClearChroma/master/art/logo.png" alt="logo" />
                     </div>
@@ -398,10 +408,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-         </div>
+                  <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"> </div>
+              </div>
+
+          </div>
+
+        <ol class="carousel-indicators">
+            <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#projects-carousel" data-slide-to="1"></li>
+            <li data-target="#projects-carousel" data-slide-to="2"></li>
+            <li data-target="#projects-carousel" data-slide-to="3"></li>
+          </ol>
       </div>
+
 
     </div>
 
