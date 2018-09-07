@@ -49,10 +49,10 @@ i.fa + span {
   font-size: 1em;
 }
 .navbar-default .navbar-nav > li > .external-link {
-  color: #661fa5;
+  color: #9d5fc3;
 }
 .navbar-transparent .navbar-nav > li > .external-link {
-  color: #1e1e1e;
+  color: #9d5fc3;
 }
 .nav-tabs {
   margin-bottom: 15px;
@@ -71,55 +71,6 @@ i.fa + span {
   }
 }
 
-/**
-  SPLASH
-**/
-.award {
-  width: 360px;
-}
-
-.award:after {
-  transform: scaleX(-1);
-}
-
-.award:after,
-.award:before {
-  content: "";
-  display: inline-block;
-  width: 100px;
-  height: 160px;
-  background-position: 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../img/laurel.svg");
-}
-
-@media (max-width:767px) {
-  .award {
-    width: 270px;
-  }
-  .award img {
-    width: 90px;
-  }
-  .award:after,
-  .award:before {
-    width: 90px;
-    height: 120px;
-  }
-}
-@media (max-width:300px) {
-  .award {
-    width: 240px;
-  }
-  .award img {
-    width: 80px;
-  }
-  .award:after,
-  .award:before {
-    width: 80px;
-    height: 100px;
-  }
-}
 /**
   DESCRIPTION CONTENT
 **/
@@ -174,18 +125,70 @@ h5 i.fa.description-icon {
 /**
   SPLASH SCREEN
 **/
+.award {
+  width: 360px;
+}
+
+.award:after {
+  transform: scaleX(-1);
+}
+
+.award:after,
+.award:before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 160px;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/laurel.svg");
+}
+
+@media (max-width:767px) {
+  .award {
+    width: 270px;
+  }
+  .award img {
+    width: 90px;
+  }
+  .award:after,
+  .award:before {
+    width: 90px;
+    height: 120px;
+  }
+}
+@media (max-width:300px) {
+  .award {
+    width: 240px;
+  }
+  .award img {
+    width: 80px;
+  }
+  .award:after,
+  .award:before {
+    width: 80px;
+    height: 100px;
+  }
+}
 .splash {
   position: relative;
   height: 88vh;
-  padding: 5em 0 5em;
-  background-image: url(../img/bg.jpg);
-  background-color: #5b3c89;
   background-size: cover;
   background-position: center center;
+  background-color: #32154499;
   color: #fff;
   top: 0px;
   left: 0px;
   background-attachment: fixed;
+}
+.splash video {
+  position: fixed;
+  z-index: -10;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 88vh;
 }
 .splash .container {
   position: absolute;
