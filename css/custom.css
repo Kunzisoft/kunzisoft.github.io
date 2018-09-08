@@ -34,7 +34,9 @@ i.fa + span {
 .orange {
   color: orange;
 }
-
+.btn {
+  margin-top: 5px;
+}
 /**
   NAVBAR
 **/
@@ -449,7 +451,7 @@ table .col-hidden > * {
 */
 .tile {
   background: #743998;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 20px 20px;
   border-radius: 18px;
   color: #edeaef;
   overflow: hidden;
@@ -461,7 +463,6 @@ table .col-hidden > * {
   webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  min-height: 460px;
 }
 .tile h1,
 .tile h2,
@@ -561,4 +562,11 @@ table .col-hidden > * {
   .project-image img {
     max-height: 260px;
   }
+}
+
+/*
+CONTRIBUTE
+*/
+.section ul {
+  padding: 0px;
 }

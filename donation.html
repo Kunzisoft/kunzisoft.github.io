@@ -72,46 +72,46 @@
         </div>
     </nav>
 
-    <div id="donationA" class="section section-bg-dark">
+    <div id="how" class="section section-bg-light">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h2><i class="fa fa-heart"></i></h2>
-            <p class="lead" data-l10n-id="donationDescA">Vous pouvez soutenir votre projet préféré et donner votre avis, il suffit de mettre en commentaire les améliorations que vous aimeriez apporter.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="donationE" class="section section-bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h2><i class="fa fa-globe"></i></h2>
-            <p class="lead" data-l10n-id="donationDescE">Vous pouvez traduire dans une langue que vous connaissez, ou coder si vous êtes développer, c'est Open Source.</p>
-            <div class="btn-group" role="group" aria-label="Contributions buttons">
-                <a class="btn btn-success" title="Translate" href="https://hosted.weblate.org/projects/keepass-dx/strings/"><i class="fa fa-language"></i><span data-l10n-id="translate">Translate</span></a>
-                <a class="btn btn-success" title="Code" href="https://github.com/Kunzisoft"><i class="fa fa-code"></i><span data-l10n-id="code">Code</span></a>
+            <div class="btn-group-vertical" data-toggle="buttons">
+              <a href="#translation" type="button" class="scrollTo btn btn-success"><i class="fa fa-globe"></i> <span data-l10n-id="translation">Traduction</span></a>
+              <a href="#code" type="button" class="scrollTo btn btn-default"><i class="fa fa-code"></i> <span data-l10n-id="code">Code</span></a>
+            </div>
+            <div class="btn-group-vertical" data-toggle="buttons">
+              <a href="#donation" type="button" class="scrollTo btn btn-success"><i class="fa fa-coffee"></i> <span data-l10n-id="donation">Donation</span></a>
+              <a href="#feedback" type="button" class="scrollTo btn btn-default"><i class="fa fa-comment"></i> <span data-l10n-id="feedback">Retour de bug</span></a>
+            </div>
+            <div class="btn-group-vertical" data-toggle="buttons">
+              <a href="#gift" type="button" class="scrollTo btn btn-success"><i class="fa fa-gift"></i> <span data-l10n-id="gift">Cadeau</span></a>
+              <a href="#mining" type="button" class="scrollTo btn btn-default"><i class="fa fa-desktop"></i> <span data-l10n-id="mining">Minage</span></a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="donationC" class="section section-bg-dark">
+    <div id="why" class="section section-bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">            
+            <h2><i class="fa fa-hand-spock-o"></i></h2>
+            <p class="lead" data-l10n-id="donationDescB">Chaque contribution est utilisée afin de créer des logiciels libres. Un logiciel libre est plus sécurisé, ouvert, respecte votre vie privée et chacun peut ajouter des fonctionnalités ou résoudre un bug.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="donation" class="section section-bg-light">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h2><i class="fa fa-coffee"></i></h2>
             <p class="lead" data-l10n-id="donationDescC">Une petite donation fait toute la différence, les logiciels libres sont créés sur la base du volontaria. Vous permettez donc des mises à jour régulières et vous augmentez la motivation des développeurs.</p>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="how" class="section section-bg-light">
-      <div class="container">
-        <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="tile">
               <h3><i class="fa fa-paypal description-icon"></i>Paypal</h3>
@@ -132,37 +132,63 @@
               <p class="lead" data-l10n-id="cryptoDesc">
                     La crypto-monnaie est un réseau de consensus qui permet un nouveau système de paiement et une monnaie entièrement numérique.
               </p>
-              <div class="btn-group" role="group" aria-label="Donation buttons">
                 <div class="btn btn-success" title="Donate Bitcoin" data-toggle="modal" data-target="#bitcoin">
-                    <img src="img/bitcoin.png" height="28" width="28" alt="Logo bitcoin"><br />Bitcoin</div>
+                    <img src="img/bitcoin.png" height="22" width="22" alt="Logo bitcoin"><br />Bitcoin</div>
+                <div class="btn btn-success" title="Donate Monero" data-toggle="modal" data-target="#monero">
+                    <img src="img/monero.png" height="22" width="22" alt="Logo monero"><br />Monero</div>
                 <div class="btn btn-success" title="Donate Litecoin" data-toggle="modal" data-target="#litecoin">
-                    <img src="img/litecoin.png" height="28" width="28" alt="Logo litecoin"><br />Litecoin</div>
+                    <img src="img/litecoin.png" height="22" width="22" alt="Logo litecoin"><br />Litecoin</div>
                 <div class="btn btn-success" title="Donate Ethereum" data-toggle="modal" data-target="#ethereum">
-                    <img src="img/ethereum.png" height="28" width="28" alt="Logo ethereum"><br />Ethereum</div>
+                    <img src="img/ethereum.png" height="22" width="22" alt="Logo ethereum"><br />Ethereum</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <div id="why" class="section section-bg-dark">
+
+    <div id="mining" class="section section-bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">            
-            <h2><i class="fa fa-hand-spock-o"></i></h2>
-            <p class="lead" data-l10n-id="donationDescB">Chaque donation est utilisée afin de créer des logiciels libres. Un logiciel libre est plus sécurisé, ouvert, respecte votre vie privée et chacun peut ajouter des fonctionnalités ou résoudre un bug.</p>
+            <h2><i class="fa fa-desktop"></i></h2>
+            <p class="lead" data-l10n-id="miningDesc">Vous ne pouvez pas donner ! Vous pouvez miner des cryptomonnaies pour nous aider. Le minage n'utilise que la puissance de votre ordinateur.</p>
           </div>
         </div>
       </div>
     </div>
-    
-    <div id="mining" class="section section-bg-light">
+
+    <div id="translation" class="section section-bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">            
-            <h2><i class="fa fa-pagelines"></i></h2>
-            <p class="lead" data-l10n-id="donationDescD">Vous ne pouvez pas donner ! Vous pouvez miner des cryptomonnaies pour nous aider. Le minage n'utilise que la puissance de votre ordinateur.</p>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2><i class="fa fa-globe"></i></h2>
+            <p class="lead" data-l10n-id="translationDesc">Vous pouvez traduire dans une langue que vous connaissez, et corriger des erreurs.</p>
+            <a class="btn btn-success" title="Translate" href="https://hosted.weblate.org/"><i class="fa fa-language"></i><span data-l10n-id="translate">Translate</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="code" class="section section-bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2><i class="fa fa-code"></i></h2>
+            <p class="lead" data-l10n-id="codeDesc">Vous pouvez développer les fonctionnalités que vous voulez voir implémenter, c'est Open Source.</p>
+            <a class="btn btn-success" title="Code" href="https://github.com/Kunzisoft"><i class="fa fa-code"></i><span data-l10n-id="code">Code</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="feedback" class="section section-bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2><i class="fa fa-comment"></i></h2>
+            <p class="lead" data-l10n-id="feedbackDesc">Exprimez-vous et laissez votre commentaire, les applications sont améliorées grace à vos recommandations.</p>
+            <a class="btn btn-success" href="mailto:contact@kunzisoft.com" title="Ask community"><i class="fa fa-comment-o"></i><b>contact@kunzisoft.com</b></a>
           </div>
         </div>
       </div>
@@ -254,15 +280,17 @@
       </div>
     </div>
 
-    <!-- Footer -->
+   <!-- Footer -->
     <footer class="section-bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p class="copyright text-muted small"><span data-l10n-id="workingMethod">Nous élaborons en télétravail mais si vous voulez nous rencontrer, nous sommes disponibles en <strong>Sarthe</strong> au <em>Mans</em> et en <strong>Bretagne</strong> à <em>Rennes</em>.</span></p>
-            <a class="copyright text-muted small" href="mailto:contact@kunzisoft.com">contact@kunzisoft.com</a>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="copyright text-muted small">
+                <span data-l10n-id="workingMethod">Disponibles en <strong>télétravail</strong> ou en <strong>Sarthe</strong> au <em>Mans</em>.</span>
+                <a class="copyright text-muted small" href="mailto:contact@kunzisoft.com">contact@kunzisoft.com</a>
+            </p>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <p class="copyright text-muted small">Copyright &copy; Kunzisoft 2017. <span data-l10n-id="allRightsReserved">Tous Droits Réservés</span></p>
           </div>
         </div>
