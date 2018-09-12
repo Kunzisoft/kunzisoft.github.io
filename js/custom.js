@@ -16,6 +16,8 @@ $(document).ready(function() {
         language = navigator.language;
     if(language.toLowerCase().includes("fr"))
         language = "fr";
+    else
+        language = "en";
 
     // Change langage
     document.webL10n.setLanguage(language);

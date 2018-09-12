@@ -54,7 +54,7 @@ i.fa + span {
   color: #9d5fc3;
 }
 .navbar-transparent .navbar-nav > li > .external-link {
-  color: #9d5fc3;
+  color: #dda6ff;
 }
 .nav-tabs {
   margin-bottom: 15px;
@@ -82,8 +82,8 @@ i.fa + span {
   padding:0;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
-  color: #f6e7ff;
-  text-shadow: 0px 0px 12px #652a92;
+  color: #fff;
+  text-shadow: 0px 0px 12px #484848;
   background-attachment: fixed;
   background-image: url(../img/bg_light.jpg);
 }
@@ -178,7 +178,7 @@ h5 i.fa.description-icon {
   height: 88vh;
   background-size: cover;
   background-position: center center;
-  background-color: #32154499;
+  background-color: #18082399;
   color: #fff;
   top: 0px;
   left: 0px;
@@ -274,7 +274,7 @@ h5 i.fa.description-icon {
 .section-bg-light {
     background-color: #743998;
     background-size: cover;
-    color: #f6e7ff;
+    color: #fff;
     background-image: url(../img/bg_light.jpg);
     background-attachment: fixed;
 }
@@ -284,7 +284,7 @@ h5 i.fa.description-icon {
     text-shadow: 1px 1px 2px #242424;
 }
 .section-bg-dark {
-    background-color: #743998;
+    background: linear-gradient(to right, #5b3075, #8a56bd) !important;
     background-size: cover;
     color: #F5F5F5;
     border-top: 1px solid #51216f;
@@ -297,9 +297,10 @@ h5 i.fa.description-icon {
     text-shadow: 0px 1px 8px #311640;
 }
 .section-bg-projects {
-    background: url("../img/bg_light.jpg") fixed;
     color: #F5F5F5;
-    background-size: cover;
+    background: url(../img/bg_project.jpg) fixed;
+    border: #51216f solid;
+    border-width: 1px 0;
 }
 .section-bg-projects h1,
 .section-bg-projects h2,
@@ -309,6 +310,9 @@ h5 i.fa.description-icon {
 }
 .section-smallTop {
     padding-top: 6px;
+}
+#projects-carousel {
+    background: url("../img/background_repeat.png");
 }
 @media (max-width:767px) {
   .section-bg-projects h1,
@@ -450,7 +454,7 @@ table .col-hidden > * {
  TILE
 */
 .tile {
-  background: #743998;
+  background: linear-gradient(to right, #743998, #8049ad) !important;
   padding: 0px 20px 20px 20px;
   border-radius: 18px;
   color: #edeaef;
@@ -539,7 +543,6 @@ table .col-hidden > * {
 }
 .project-description p {
   margin-top: 16px;
-  color: #4a4a4a;
   line-height: 160%;
 }
 .project-description .btn {
@@ -547,7 +550,8 @@ table .col-hidden > * {
 }
 .project-links {
   border-radius: 0 0 18px 18px;
-  background: white;
+  background: #3c3c3c;
+  color: #fff;
 }
 
 @media (max-width:767px) {
