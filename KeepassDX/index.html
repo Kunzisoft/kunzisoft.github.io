@@ -1,49 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="../js/marked.min.js"></script>
-    <link rel="icon" href="../img/favicon.ico" />
-    <title>KeePass DX</title>
-    <link rel="stylesheet" href="../css/markdown.css">
-    <style>
-        html {
-	        background: #398e3d url("https://raw.githubusercontent.com/Kunzisoft/KeePassDX/master/app/src/main/res/drawable/background_img_repeat.png") repeat;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: rgb(67, 160, 71);
-        }
-        a:hover {
-            background:-webkit-gradient(linear, 80% 20%, 80% 100%, from(#34A032), to(#34A032));
-            color: #f7ffff;
-            border: 1px solid rgb(67, 160, 71);
-        }
-    </style>
+    <meta http-equiv="refresh" content="0; url=http://www.keepassdx.com/" />
   </head>
-
   <body>
-    <div class="app_banner">
-        <img width="100%" src="https://raw.githubusercontent.com/Kunzisoft/KeePassDX/master/fastlane/metadata/android/en-US/images/featureGraphic.png" alt="banner"/>
-    </div>
-    <div class="right">
-        See on <a href="https://github.com/Kunzisoft/KeePassDX">Github</a>
-    </div>
-    <div>
-        Powered by <a href="http://kunzisoft.com">Kunzisoft</a>
-    </div>
-    <div id="content" data-spy="scroll" data-target=".navbar"></div>
-    <script type="text/javascript">
-        var sScriptURL ='https://raw.githubusercontent.com/Kunzisoft/KeePassDX/master/ReadMe.md'; 
-        var oReq = new XMLHttpRequest(); 
-        oReq.addEventListener("load", function fLoad() {
-            document.getElementById('content').innerHTML =
-            marked(this.responseText);
-        }); 
-        oReq.open("GET", sScriptURL);
-        oReq.send();
-    </script>
   </body>
 </html>

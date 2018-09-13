@@ -66,7 +66,7 @@ i.fa + span {
 }
 @media (min-width:768px) {
   .navbar-transparent {
-    background-color: rgba(116, 57, 152, 0.08);
+    background-color: rgba(116, 57, 152, 0);
   }
   .navbar-transparent a {
     color: white;
@@ -401,8 +401,9 @@ table .col-hidden > * {
     text-align: center;
     padding: 18px;
     background: white;
-    border-radius: 18px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 .cryptokey img {
     padding-bottom: 16px;

@@ -2,6 +2,14 @@
 var interval;
 var inProgress = false;
 
+// Redirect project
+var $_GET=[];
+window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(a,name,value){$_GET[name]=value;});
+var project = $_GET['project'];
+if (project != null && project.toLowerCase() == "keepassdx") {
+    window.location.replace("http://www.keepassdx.com/contribution.html");
+}
+
 $(document).ready(function() {
     /**
     * Manage Langages
