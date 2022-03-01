@@ -77,15 +77,12 @@ i.fa + span {
   DESCRIPTION CONTENT
 **/
 .description-content {
-  background: #613189;
   margin:0;
   padding:0;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
   color: #fff;
   text-shadow: 0px 0px 12px #484848;
-  background-attachment: fixed;
-  background-image: url(../img/bg_light.jpg);
 }
 .description-icon {
   display: block;
@@ -114,7 +111,6 @@ h5 i.fa.description-icon {
   font-size: 1.2em;
 }
 .description-content .description-tile {
-  min-height: 325px;
   padding: 0px 20px 0px 20px;
 }
 .description-content button i {
@@ -203,11 +199,11 @@ h5 i.fa.description-icon {
 }
 .splash h1 {
   font-size: 3.6em;
-  color: #e2c5f5;
+  color: #d28aff;
   text-shadow: 1px 1px 2px black;
 }
 .splash h2 {
-  color: #dfabf9;
+  color: #ffffff;
   text-shadow: 0px 1px 2px #000;
   font-size: 2.4em;
   margin-top: 1.4em;
@@ -272,11 +268,9 @@ h5 i.fa.description-icon {
     padding: 2.5em 0 2.5em 0;
 }
 .section-bg-light {
-    background-color: #743998;
+    background-color: #3a0958;
     background-size: cover;
     color: #fff;
-    background-image: url(../img/bg_light.jpg);
-    background-attachment: fixed;
 }
 .section-bg-light h1,
 .section-bg-light h2,
@@ -284,7 +278,7 @@ h5 i.fa.description-icon {
     text-shadow: 1px 1px 2px #242424;
 }
 .section-bg-dark {
-    background: linear-gradient(to right, #5b3075, #8a56bd) !important;
+    background: linear-gradient(to right, #36115e, #8017b5) !important;
     background-size: cover;
     color: #F5F5F5;
     border-top: 1px solid #51216f;
@@ -298,7 +292,6 @@ h5 i.fa.description-icon {
 }
 .section-bg-projects {
     color: #F5F5F5;
-    background: url(../img/bg_project.jpg) fixed;
     border: #51216f solid;
     border-width: 1px 0;
 }
@@ -309,7 +302,8 @@ h5 i.fa.description-icon {
     text-shadow: 1px 1px 8px #1e1921;
 }
 .section-smallTop {
-    padding-top: 6px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 #projects-carousel {
     background: url("../img/background_repeat.png");
@@ -455,7 +449,7 @@ table .col-hidden > * {
  TILE
 */
 .tile {
-  background: linear-gradient(to right, #743998, #8049ad) !important;
+  background: linear-gradient(to right, #451974, #671598) !important;
   padding: 0px 20px 20px 20px;
   border-radius: 18px;
   color: #edeaef;
