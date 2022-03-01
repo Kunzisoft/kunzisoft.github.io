@@ -305,8 +305,8 @@ h5 i.fa.description-icon {
     padding-top: 1em;
     padding-bottom: 1em;
 }
-#projects-carousel {
-    background: url("../img/background_repeat.png");
+.carousel-control {
+    margin: 24px;
 }
 @media (max-width:767px) {
   .section-bg-projects h1,
@@ -485,7 +485,7 @@ table .col-hidden > * {
   Projects
 */
 .project-item {
-  min-height: 540px;
+  min-height: 560px;
   padding-top: 60px;
 }
 .project {
@@ -512,6 +512,15 @@ table .col-hidden > * {
 .project-logo img {
   display: block;
   margin: auto auto;
+  background: 
+}
+.circle {
+   width: 96px;
+   height: 96px;
+   background: #3c3c3c; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 20px;
 }
 .project-image {
   padding: 0;
