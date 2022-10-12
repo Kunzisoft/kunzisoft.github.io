@@ -187,6 +187,7 @@ h5 i.fa.description-icon {
   top: 0;
   min-width: 100%;
   min-height: 88vh;
+  background: #3a0958;
 }
 .splash .container {
   position: absolute;
