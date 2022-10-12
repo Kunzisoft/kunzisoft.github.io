@@ -43,7 +43,6 @@ $(document).ready(function() {
     // Tabs Table
     var hideColumn = function(tabTh) {
         if(!tabTh.hasClass('col-active')) {
-            console.log(tabTh);
             $.each($('.tab-col'), function(keyTab, nodeTab) {
                     $($(nodeTab).data('col')).addClass('col-hidden');
                     $(nodeTab).removeClass('col-active');
@@ -84,6 +83,24 @@ $(document).ready(function() {
         $('.col-hidden').removeClass('col-hidden');
         $('.tab-col').unbind('click.kunzisoftEvent');
     }
+    
+    // Select formula
+    var checkFormula = function(formula) {
+    	console.log(formula);
+    	var radioFormula = $('input:radio[name=formula]')
+    	radioFormula.removeAttr("checked");
+    	radioFormula.filter('[value="'+formula+'"]').attr('checked', true);
+    }
+
+    $('.col-1').on('click', function() {
+    	checkFormula('libre');
+    });
+    $('.col-2').on('click', function() {
+    	checkFormula('open');
+    });
+    $('.col-3').on('click', function() {
+    	checkFormula('pro');
+    });
 
     // Color projects
     $('.project').css('background', function( index ) {
