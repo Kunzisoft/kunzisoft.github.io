@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width'>
+  <title>Privacy Policy</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      padding: 1em;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const appParam = urlParams.get('app');
+        const idParam = urlParams.get('id');
+        const creatorParam = urlParams.get('creator');
+        const emailParam = urlParams.get('email');
+        function replaceAny(from, to) {
+          document.body.innerHTML = document.body.innerHTML.replaceAll(from, to);
+        }
+        replaceAny('[app]', '<a href="https://play.google.com/store/apps/details?id='+idParam+'">'+appParam+'</a>');
+        replaceAny('[creator]', creatorParam);
+        replaceAny('[email]', emailParam);
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Privacy Policy</h1>
+    <p>This privacy policy applies to the [app] app for mobile devices that was created by [creator] under Open Source <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL3</a> license. This service is intended for use "AS IS".</p>
+  <h1>Information Collection and Use</h1>
+    <p>No information is collected, stored, used or shared by the [app] app, personal or otherwise.</p>
+  <h1>Contact</h1>
+    <p>If you have any questions regarding privacy while using the [app] app, or have questions about the practices, please contact via email at <a href="mailto: [email]">[email]</a>.</p>
+ </body>
+
+</html>
