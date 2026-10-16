@@ -168,4 +168,7 @@ $(document).ready(function() {
                         checkScroll();
         });
     }
+
+    // Dynamic year
+    $("#currentYear").text(new Date().getFullYear());
 });
