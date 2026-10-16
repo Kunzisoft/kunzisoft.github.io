@@ -49,6 +49,10 @@ i.fa + span {
 .navbar .btn {
   font-size: 1em;
 }
+.navbar-default {
+  background-color: #3a0958;
+  border-color: #51216f;
+}
 .navbar-default .navbar-nav > li > .external-link {
   color: #9d5fc3;
 }
