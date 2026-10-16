@@ -513,7 +513,7 @@ table .col-hidden > * {
 .project-logo img {
   display: block;
   margin: auto auto;
-  background: 
+  width: 96px;
 }
 .circle {
    width: 96px;
