@@ -90,7 +90,7 @@ i.fa + span {
   margin-bottom: 5px;
   background: url(../img/bg_description_icon.svg);
   color: #f4e5ff;
-  font-size: 32px;
+  font-size: 24px;
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
@@ -279,7 +279,7 @@ h5 i.fa.description-icon {
     text-shadow: 1px 1px 2px #242424;
 }
 .section-bg-dark {
-    background: linear-gradient(to right, #36115e, #8017b5) !important;
+    background: linear-gradient(to bottom, #651596, #3a0958) !important;
     background-size: cover;
     color: #F5F5F5;
     border-top: 1px solid #51216f;
@@ -301,6 +301,10 @@ h5 i.fa.description-icon {
 .section-bg-projects h3 {
     color: #ffffff;
     text-shadow: 1px 1px 8px #1e1921;
+}
+.section-bg-projects h1 {
+  
+    font-size: 23px;
 }
 .section-smallTop {
     padding-top: 1em;
